@@ -1,25 +1,25 @@
 <!-- markdownlint-disable MD033 -->
 
-# Project Name
+# Mystery Army
 
 ## Overview
 
 ### What is this website for?
 
-one paragraph about what your website does
+This is a game based on the classic Nokia game, Snake, but with a Scooby-Doo theme.
 
 ### What does it do?
 
-one paragraph, or two describing what your website does
+ The aim of the game is to grow the snake(the carton characters) without hitting the walls or hitting the tail (the last character at the end)
 
 ### How does it work
 
 one paragraph describing how the4 website works
-This website uses AngularJS to route viewers through the site and control which Javascript is executed. The site is styled with Bootstrap. The quiz has been created using Javascript and modal for enlarging images is displayed using some JQuery code. Bower has been used to manage package dependencies for deployment of site on github pages. The site can be viewed HERE
+This website uses basic **HTML** and **CCS** to create the static components of the game. All the interactive features, including movement are made using **JavaScript**.
 
-[Live Website](https://datonex.github.io/visit-zimbabwe/)
+[Live Website](https://datonex.github.io/mystery-army/)
 
-[GitHub Repository](https://github.com/datonex/visit-zimbabwe/)
+[GitHub Repository](https://github.com/datonex/mystery-army)
 
 ## UX
 
