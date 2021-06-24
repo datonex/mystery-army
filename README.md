@@ -163,9 +163,11 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 - [**TinyPNG**](https://tinypng.com/) used to reduce resolution of images
 
-- [**Adobe Illustrator**](https://www.adobe.com/uk/creativecloud/illustration.html) Adobe Illustrator was used to draw the snake head and body vectors.
+- [**Adobe Illustrator**](https://www.adobe.com/uk/creativecloud/illustration.html) was used to draw the snake head and body vectors.
 
-- [**Adobe Xd**](https://www.adobe.com/ie/products/xd.html) - Adobe Xd was used to create wireframes for mobile, tablet and desktop.
+- [**Adobe Xd**](https://www.adobe.com/ie/products/xd.html) was used to create wireframes for mobile, tablet and desktop.
+
+- [**Lunapic**](https://www5.lunapic.com/editor/) was used to remove background from images to create `.png` files
 
 ## Testing
 
@@ -308,11 +310,14 @@ Each bit of content must have its own link and displayed as a list
 
 #### Images
 
-- video was obtained from [here](https://linkhere.com)
+- [Fruits](https://www.vecteezy.com/vector-art/148485-fruit-icon-pack) by Jellyfish from Vecteezy
+
+- [Spooky Castle](https://pixabay.com/illustrations/spooky-castle-fantasy-scary-trees-5944873/) by ParallelVision from Pixabay
 
 #### Audio
 
-- audio was obtained from [here](https://linkhere.com)
+- [Game over](https://mixkit.co/free-sound-effects/) from mixkit
+- epidemic sound
 
 #### Video
 
@@ -320,6 +325,8 @@ Each bit of content must have its own link and displayed as a list
 
 ### Acknowledgements
 
-I received inspiration for this project from following tourists sites
+I received inspiration for this project from following
+
+- [Ania Kubow](https://github.com/kubowania/Nokia3310-Snake) from snake tutorial
 
 - Thank you to my mentor for his support and guidance
