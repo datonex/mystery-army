@@ -5,4 +5,13 @@ env.py
 __pycache__/
 *.py[cod]
 node_modules/
-.vscode/
+.vscode/*
+.vscode/client.cnf
+.vscode/font_fix.py
+.vscode/heroku_config.sh
+.vscode/init_tasks.sh
+.vscode/launch.json
+.vscode/mysql.cnf
+.vscode/settings.json
+.vscode/since_update.sh
+.vscode/start_mysql.sh
