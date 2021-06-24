@@ -52,11 +52,11 @@ Story for the game came from my love of Scooby Doo as a child. They always encou
 
 #### Colour Scheme
 
-The colour theme of the game is based on one of my favourite colour's, purple. I found a background with the colours I want and based the colour scheme from there. I used [Adobe Color, Image](https://color.adobe.com/create/image) to pick colours from the images and automatically generate colours for me.
+The colour theme of the game is based on one of my favourite colour's, purple. I found a background with the colours I want and based the colour scheme from there. I used [**Adobe Color - Image**](https://color.adobe.com/create/image) to pick colours from the images and automatically generate colours for me.
 
 <img src="./assets/img/readme/colour-scheme-org.png"/>
 
-The darkest colour in the grid was too dark, so I used [Adobe Color, Wheel](https://color.adobe.com/create/color-wheel) to determine a slightly lighter color that will best suit the scheme.
+The darkest colour in the grid was too dark, so I used [**Adobe Color - Wheel**](https://color.adobe.com/create/color-wheel) to determine a slightly lighter color that will best suit the scheme.
 
 <img src="./assets/img/readme/colour-scheme-mod.png" />
 
@@ -142,49 +142,30 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 ### Languages used
 
-- [**HTML**](https://en.wikipedia.org/wiki/HTML5)
-- description of how it was used
-- [**CSS**](https://en.wikipedia.org/wiki/CSS)
-- [JavaScript](https://www.javascript.com/)
+- [**HTML**](https://en.wikipedia.org/wiki/HTML5) for static text and containers for the game, and buttons.
+- [**CSS**](https://en.wikipedia.org/wiki/CSS) for styling of the game.
+
+- [**JavaScript**](https://www.javascript.com/) for the interactive features of the game.
 
 ### Frameworks, Libraries and Programs Used
 
-- [Fontawesome _v.5.15.3_](https://fontawesome.com/)
-- We use **Font Awesome** javascript link to insert icons in the website to make site more visually appealing and easy to navigate.
+- [**Fontawesome _v.5.15.3_**](https://fontawesome.com/) was used to insert icons arrows for the on-screen buttons in the game
 
-- [Favicon](https://favicon.io/)
-- Favicon.io was used to generate favicon and copied the syntax
+- [**Favicon**](https://favicon.io/) was used to generate favicon and copied the syntax copied from website.
 
-- [Google Fonts](https://fonts.google.com/)
-- Google Fonts was used to import 'Lobster' and 'Open Sans' fonts in the style.css stylesheet.
+- [**Google Fonts**](https://fonts.google.com/) was used to import **Mystery Quest** and **Open Sans** fonts in the style.css stylesheet.
 
-- [Visual Studio Code](https://code.visualstudio.com/)
-- Source-code editor optimised fro debugging, syntax highlighting and extension support
+- [**Visual Studio Code**](https://code.visualstudio.com/) is a source-code editor optimised for debugging, syntax highlighting and extension support.
 
-- [Git](https://git-scm.com/)
-- Git was used to allow for tracking of any changes in the code and for the version control.
+- [**Git**](https://git-scm.com/) was used to allow for tracking of any changes in the code and for the version control.
 
-- [Github](https://github.com/)
-- GitHub is used to host the project files and publish the live website by using Git Pages.
+- [**Github**](https://github.com/) is used to host the project files and publish the live website by using GitPages.
 
-- [TinyPNG](https://tinypng.com/)
-- Used to reduce resolution of images
+- [**TinyPNG**](https://tinypng.com/) used to reduce resolution of images
 
-- [Bootstrap v4.5.0](https://getbootstrap.com/) - Used for the responsive layout as well as custom components such as image carousel, navigation bar, footer, cards, and collapse element.
-- [jquery](https://jquery.com/) - Used in some of the clickable elements such as collapsible 'hamburger' nav bar and collapse element.
-- [popper.js](https://popper.js.org/) - Used in some of the clickable elements such as collapsible 'hamburger' navbar and collapse element.
-- [Font Awesome](https://fontawesome.com/) - Font Awesome was used to add social icons and complement the design.
-- [Google Fonts](https://fonts.google.com/) - Google Fonts was used to import 'Exo' and 'PT Sarif' fonts in the main.css stylesheet.
-- [Adobe Fonts](https://fonts.adobe.com/) - Adobe Fonts was used to import 'NeonStream' font which was the accent font in this project and cannot be found on Google Fonts website.
-- [Git](https://git-scm.com/) - Git was used to allow for tracking of any changes in the code and for the version control.
-- [GitPod](https://www.gitpod.io/) - GitPod, connected to GitHub, hosted the coding space and allowed the projected to be committed to the Github repository.
-- [Github](https://github.com/) - GitHub is used to host the project files and publish the live website by using Git Pages.
-- [Lightroom](https://www.adobe.com/ie/products/photoshop-lightroom.html?gclid=CjwKCAjwwYP2BRBGEiwAkoBpAqomS77OrQwQggC9QPnPACrkLBs-2AcrW9ZUvxbUJnFOgbRGKNeNEhoC95IQAvD_BwE&sdid=88X75SKS&mv=search&ef_id=CjwKCAjwwYP2BRBGEiwAkoBpAqomS77OrQwQggC9QPnPACrkLBs-2AcrW9ZUvxbUJnFOgbRGKNeNEhoC95IQAvD_BwE:G:s&s_kwcid=AL!3085!3!394412108599!e!!g!!lightroom) - Lightroom was used to edit and resize all images.
-- [Photoshop](https://www.adobe.com/ie/products/photoshop.html?gclid=CjwKCAjwwYP2BRBGEiwAkoBpAuYIg7JHUAFtnRQB28LDaU5gvFxhLX_56PYV2xbl6bTKvYSjK5yoLhoCkjQQAvD_BwE&sdid=88X75SKS&mv=search&ef_id=CjwKCAjwwYP2BRBGEiwAkoBpAuYIg7JHUAFtnRQB28LDaU5gvFxhLX_56PYV2xbl6bTKvYSjK5yoLhoCkjQQAvD_BwE:G:s&s_kwcid=AL!3085!3!340674288378!e!!g!!photoshop) - Photoshop was used to create the background graphic for the Landing page as well as the favicon.
-- [Adobe Xd](https://www.adobe.com/ie/products/xd.html) - Adobe Xd was used to create wireframes and mockups.
-  - [UnDraw](https://xd.undraw.co/) - UnDraw plugin was used to obtain royalty-free graphics used in the 'Home' and 'Active' pages.
-  - [ToolKit](https://manoharmanu.online/toolkit_plugin) - ToolKit plugin was used to obtain Royalty free images from UnSplash.
-  - [Icons 4 Design](http://emsoftware.com/xdplugins/icons-4-design/) - Icons 4 Design was used to add some icons across the page such as the alert sign on the 'Informed' page.
+- [**Adobe Illustrator**](https://www.adobe.com/uk/creativecloud/illustration.html) Adobe Illustrator was used to draw the snake head and body vectors.
+
+- [**Adobe Xd**](https://www.adobe.com/ie/products/xd.html) - Adobe Xd was used to create wireframes for mobile, tablet and desktop.
 
 ## Testing
 
