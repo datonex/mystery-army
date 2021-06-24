@@ -52,11 +52,13 @@ Story for the game came from my love of Scooby Doo as a child. They always encou
 
 #### Colour Scheme
 
-The colour theme of the game is based on one of my favourite colour's, purple.
+The colour theme of the game is based on one of my favourite colour's, purple. I found a background with the colours I want and based the colour scheme from there. I used [Adobe Color, Image](https://color.adobe.com/create/image) to pick colours from the images and automatically generate colours for me.
 
-Instead, I used the idea that Zimbabwe has a lot of wild life, the colour was meant to mimic the savannah during a sunset. The colour is subtle without grabbing to much attention while giving more focus to the images. The main colour was picked using the colour picker on the header website to obtain the colour light salmon (#fdcba6) The buttons were matched using the compound approach from [adobe color wheel](https://color.adobe.com/create/color-wheel). to obtain the colour (#71C9A2)
+<img src="./assets/img/readme/colour-scheme-org.png"/>
 
-<img src="./assets/images/readme-images/colour-scheme.png" height="100px"/>
+The darkest colour in the grid was too dark, so I used [Adobe Color, Wheel](https://color.adobe.com/create/color-wheel) to determine a slightly lighter color that will best suit the scheme.
+
+<img src="./assets/img/readme/colour-scheme-mod.png" />
 
 #### Typography
 
