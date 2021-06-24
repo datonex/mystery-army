@@ -62,13 +62,13 @@ The darkest colour in the grid was too dark, so I used [Adobe Color, Wheel](http
 
 #### Typography
 
-- Font used for headings was Lobster with a back-up font of sans-serif. The font is eye catching and decorated white still easy to read.
+Font used for the heading was Mystery Quest with a back-up font of sans-serif. The font is eye catching and the swirls in the writing match the title of the game in terms of theme.
 
-<img src="./assets/images/readme-images/lobster-font.png" height="50px" />
+<img src="./assets/img/readme/font-mystery-quest.png" />
 
-- Font used for main text was Open Sans with a back-up font of sans-serif. The font is easy to read and well spaced out.
+Font used for main text was Quicksand with a back-up font of sans-serif. The font is easy to read, well spaced out and goes well together with Mystery Quest.
 
-<img src="./assets/images/readme-images/open-sans-font.png" height="50px"/>
+<img src="./assets/img/readme/font-quicksand.png" height = "100px"/>
 
 #### Imagery
 
