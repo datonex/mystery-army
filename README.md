@@ -1,25 +1,14 @@
 <!-- markdownlint-disable MD033 -->
 
-# Mystery Army
+# The Snake & the Wizard
 
 ## Overview
 
-### What is this website for?
+This is a web based game inspired by the Nokia 3310 version of Snake. The aim of the game is to grow the snake by eating the fruit that randomly spawn onto the board without hitting the boarder or without hitting your own tail. The website uses basic **HTML** and **CCS** to create the static components of the game. All the interactive features, including movement are made using **JavaScript**. The game will be responsive for all devices.
 
-This is a game based on the classic Nokia game, Snake, but with a Scooby-Doo theme.
+[Live Website](https://datonex.github.io/snake-and-the-wizard/)
 
-### What does it do?
-
- The aim of the game is to grow the snake(the carton characters) without hitting the walls or hitting the tail (the last character at the end)
-
-### How does it work
-
-one paragraph describing how the4 website works
-This website uses basic **HTML** and **CCS** to create the static components of the game. All the interactive features, including movement are made using **JavaScript**.
-
-[Live Website](https://datonex.github.io/mystery-army/)
-
-[GitHub Repository](https://github.com/datonex/mystery-army)
+[GitHub Repository](https://github.com/datonex/snake-and-the-wizard)
 
 ## UX
 
