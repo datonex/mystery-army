@@ -72,28 +72,23 @@ Font used for main text was Quicksand with a back-up font of sans-serif. The fon
 
 #### Imagery
 
-- Images on the website were the top if not second priority on the website. They needed to supplement the text and offer visual aid to illustrate favourable tourist locations.
+ The background of the page is a haunted house type of building to decorate the page and fit in with context to the story.
 
-#### Mockups/wireframes
+#### Wireframes
 
-Mockups were made using Balsamiq Wireframes
+Wireframes were created using Adobe Xd.
 
-[Mockup](./assets/planning/mockup-1.pdf)
+- Mobile Wireframe
 
-- Wireframes were created using Adobe Xd, however, the layout and design was fallowed very loosely and changed during the mockup stage.
-- [Mobile Wireframes](https://xd.adobe.com/view/9071beee-abcf-426e-6c19-ffe3212c5172-e640/) :point_left:
+<img src="./assets/img/readme/wireframes/large-mobile.png" height="300px" />
 
-              <img src="./assets/images/readme-images/mobile-wire.png" />
+- Tablet Wireframe
 
-  - [Desktop Wireframes](https://xd.adobe.com/view/d44aebce-000d-4a7c-4e4b-7ea4372b445b-a27b/) :point_left:
+<img src="./assets/img/readme/wireframes/tablet.png" height="300px"/>
 
-                    <img src="./assets/images/readme-images/desktop-wire.png" />
+- Desktop Wireframe
 
-- #### Mockups
-
-  - Mockups were also created using Adobe Xd and the final design of the webpage is very closely related hence I haven't included any screenshots.
-  - [Mobile Wireframes](https://xd.adobe.com/view/97a16e82-02a0-41e3-598d-31bbba422cec-e190/) :point_left:
-  - [Desktop Wireframes](https://xd.adobe.com/view/f42e5201-83f0-490e-75a5-c2ee85a8d6fb-821f/) :point_left:
+<img src="./assets/img/readme/wireframes/webpage.png" height="300px" />
 
 ### Existing Features
 
