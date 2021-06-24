@@ -1,5 +1,3 @@
-<!-- markdownlint-disable MD033 -->
-
 # The Snake & the Wizard
 
 ## Overview
@@ -9,6 +7,8 @@ This is a web based game inspired by the Nokia 3310 version of Snake. The aim of
 [Live Website](https://datonex.github.io/snake-and-the-wizard/)
 
 [GitHub Repository](https://github.com/datonex/snake-and-the-wizard)
+
+## Table of Contents (generate here)
 
 ## UX
 
@@ -22,21 +22,27 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 ### User Stories
 
-- #### Things are slowly getting back to normal due to the pandemic, I want to plan my next holiday
+- #### As a user who wants to play a quick game on my commute
 
-1. I want to easily navigate the site relatively easily
+1. I want to hav access to the game on the go
 
-2. I want to be able to see a balance of text, images and some video to get a glimpse of where I will be visiting
+2. I want to easily start the game
 
-3. I want to be able to access links that direct me to important websites easily
+3. I want to be able to see a balance of images and text
 
-4. I want some clicking interaction with the page so that I don't get bored
+4. I want to be able to easily see my score
 
-- #### As a previous who is using the website for reference
+5. I want responsive touch interaction on mobile device
+
+- #### As an adolescent
 
 1. I want to have access to the website on any device and on the go
 
-2. I want the navigation bar easily accessible so that I can get where I want quickly
+2. I want the buttons to be easy to see and be responsive
+
+3. I want responsive touch interaction on mobile device or tablet
+
+4. I want to be able to use the arrow buttons, or the WASD buttons to control the snake's direction on desktop
 
 ### Design
 
