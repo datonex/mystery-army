@@ -72,7 +72,7 @@ Font used for main text was Quicksand with a back-up font of sans-serif. The fon
 
 #### Imagery
 
- The background of the page is a haunted house type of building to decorate the page and fit in with context to the story.
+The background of the page is a haunted house type of building to decorate the page and fit in with context to the story.
 
 #### Wireframes
 
@@ -80,15 +80,15 @@ Wireframes were created using Adobe Xd.
 
 - Mobile Wireframe
 
-<img src="./assets/img/readme/wireframes/large-mobile.png" height="300px" />
+<img src="./assets/img/readme/wireframes/wireframes-second/large-mobile.png" height="300px" />
 
 - Tablet Wireframe
 
-<img src="./assets/img/readme/wireframes/tablet.png" height="300px"/>
+<img src="./assets/img/readme/wireframes/wireframes-second/tablet.png" height="300px"/>
 
 - Desktop Wireframe
 
-<img src="./assets/img/readme/wireframes/webpage.png" height="300px" />
+<img src="./assets/img/readme/wireframes/wireframes-second/webpage.png" height="300px" />
 
 ### Existing Features
 
@@ -239,14 +239,15 @@ Pass
 
 1. Error: The element a must not appear as a descendant of the button element
 
-From line 345, column 63; to line 345, column 118
+- From line 345, column 63; to line 345, column 118
 
 `="button"><a href="https://www.evisa.gov.zw/home" target="_blank">Apply`
 
 <!-- markdownlint-disable-next-line MD029 -->
+
 2. Error: The element a must not appear as a descendant of the button element.
 
-From line 376, column 38; to line 376, column 89
+- From line 376, column 38; to line 376, column 89
 
 `="button"><a href="https://www.expedia.co.uk" target="_blank">Book f`
 
@@ -327,6 +328,6 @@ Each bit of content must have its own link and displayed as a list
 
 I received inspiration for this project from following
 
-- [Ania Kubow](https://github.com/kubowania/Nokia3310-Snake) from snake tutorial
+- [WebDev Simplified Channel](https://github.com/WebDevSimplified/Javascript-Snake-Game) from snake tutorial
 
 - Thank you to my mentor for his support and guidance
