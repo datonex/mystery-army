@@ -315,6 +315,8 @@ Each bit of content must have its own link and displayed as a list
 
 - [Spooky Castle](https://pixabay.com/illustrations/spooky-castle-fantasy-scary-trees-5944873/) by ParallelVision from Pixabay
 
+- Favicon image of snake obtained from [Twemoji](https://twemoji.twitter.com/), graphics licenced under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
 #### Audio
 
 - [Game over](https://mixkit.co/free-sound-effects/) from mixkit
