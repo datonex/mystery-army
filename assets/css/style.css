@@ -32,5 +32,5 @@ h1,
 }
 
 .food {
-  background-image: url(/assets/img/apple.png);
+  background: red;
 }

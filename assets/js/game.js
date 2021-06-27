@@ -4,6 +4,8 @@ import {
   snakeSpeed,
 } from "./snake.js";
 
+import { draw as drawFood } from "./food.js";
+
 // Game loop global variables
 let lastRenderTime = 0;
 const gameBoard = document.getElementById("game-board");
@@ -29,4 +31,5 @@ function update() {
 function draw() {
   gameBoard.innerHTML = "";
   drawSnake(gameBoard);
+  drawFood(gameBoard);
 }
