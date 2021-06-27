@@ -1,4 +1,8 @@
-import { draw as drawSnake, snakeSpeed } from "./snake.js";
+import {
+  draw as drawSnake,
+  update as updateSnake,
+  snakeSpeed,
+} from "./snake.js";
 
 // Game loop global variables
 let lastRenderTime = 0;
@@ -18,8 +22,11 @@ function main(currentTime) {
 }
 window.requestAnimationFrame(main);
 
-function update() {}
+function update() {
+  updateSnake();
+}
 
 function draw() {
+  gameBoard.innerHTML = "";
   drawSnake(gameBoard);
 }
