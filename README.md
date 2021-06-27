@@ -328,8 +328,9 @@ Each bit of content must have its own link and displayed as a list
 
 ### Acknowledgements
 
-I received inspiration for this project from following
+#### Coding resources used
 
 - [WebDev Simplified Channel](https://github.com/WebDevSimplified/Javascript-Snake-Game) from snake tutorial
+- key code values [WesBos](https://keycode.info/)
 
 - Thank you to my mentor for his support and guidance
