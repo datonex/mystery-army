@@ -4,12 +4,13 @@ export const snakeSpeed = 1.5;
 const snakeBody = [{ x: 21, y: 21 }];
 
 export function update() {
+  const inputDirection = getInputDirection();
   for (let i = snakeBody.length - 2; i >= 0; i--) {
     snakeBody[i + 1] = { ...snakeBody[i] };
   }
 
-  snakeBody[0].x += getInputDirection.x;
-  snakeBody[0].y += getInputDirection.y;
+  snakeBody[0].x += inputDirection.x;
+  snakeBody[0].y += inputDirection.y;
 }
 
 export function draw(gameBoard) {
