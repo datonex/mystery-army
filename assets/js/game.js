@@ -4,7 +4,7 @@ import {
   snakeSpeed,
 } from "./snake.js";
 
-import { draw as drawFood } from "./food.js";
+import { draw as drawFood, update as updateFood } from "./food.js";
 
 // Game loop global variables
 let lastRenderTime = 0;
@@ -26,6 +26,7 @@ window.requestAnimationFrame(main);
 
 function update() {
   updateSnake();
+  updateFood();
 }
 
 function draw() {
