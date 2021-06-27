@@ -3,6 +3,7 @@ import {
   update as updateSnake,
   snakeSpeed,
   getSnakeHead,
+  snakeIntersection,
 } from "./snake.js";
 
 import { draw as drawFood, update as updateFood } from "./food.js";
@@ -44,5 +45,5 @@ function draw() {
 }
 
 function checkDeath() {
-  gameOver = outsideGrid(getSnakeHead());
+  gameOver = outsideGrid(getSnakeHead()) || snakeIntersection();
 }
