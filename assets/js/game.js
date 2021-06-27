@@ -18,7 +18,10 @@ const gameBoard = document.getElementById("game-board");
 //Game loop
 function main(currentTime) {
   if (gameOver) {
-    return alert("Oh no the wizard caught you!");
+    if (confirm("Oh no the wizard caught you! Press ok to restart.")) {
+      window.location = "/";
+    }
+    return;
   }
   window.requestAnimationFrame(main);
 
