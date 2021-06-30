@@ -330,7 +330,9 @@ Each bit of content must have its own link and displayed as a list
 
 #### Coding resources used
 
-- [WebDev Simplified Channel](https://github.com/WebDevSimplified/Javascript-Snake-Game) from snake tutorial
+- Game logic from [WebDev Simplified Channel](https://github.com/WebDevSimplified/Javascript-Snake-Game) from snake tutorial
 - key code values [WesBos](https://keycode.info/)
+- Code Institute [Love Maths](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) Project
+- How to access local storage using **JavaScript** from [Michael Karen](https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68)
 
 - Thank you to my mentor for his support and guidance
