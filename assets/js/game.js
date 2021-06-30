@@ -1,9 +1,9 @@
 import {
   draw as drawSnake,
   update as updateSnake,
-  snakeSpeed,
   getSnakeHead,
   snakeIntersection,
+  snakeSpeed,
 } from "./snake.js";
 
 import { draw as drawFood, update as updateFood } from "./food.js";
