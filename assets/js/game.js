@@ -13,7 +13,9 @@ import { outsideGrid } from "./grid.js";
 // Game loop global variables
 let lastRenderTime = 0;
 let gameOver = false;
+let score = parseInt(document.getElementById("score").innerText);
 const gameBoard = document.getElementById("game-board");
+const hiScore = localStorage.getItem("hiscore");
 
 //Game loop
 function main(currentTime) {
@@ -52,6 +54,21 @@ function checkDeath() {
 }
 
 export function incrementScore() {
-  let score = parseInt(document.getElementById("score").innerText);
   document.getElementById("score").innerText = ++score;
+}
+
+export function getHiScore() {
+  let scoreEval = 0;
+  if (hiScore === null) {
+    localStorage.setItem("hiscore", JSON.stringify(scoreEval));
+  } else {
+    scoreEval = JSON.parse(hiScore);
+    document.getElementById("hiscore").innerText = hiScore;
+  }
+
+  if (score > scoreEval) {
+    scoreEval = score;
+    localStorage.setItem("hiscore", JSON.stringify(scoreEval));
+    document.getElementById("hiscore").innerText = parseInt(scoreEval);
+  }
 }
