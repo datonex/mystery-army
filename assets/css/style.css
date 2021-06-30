@@ -2,7 +2,7 @@
 
 body {
   font-family: "Quicksand", sans-serif;
-  background-color: #d9c1d1;
+  background: #d9c1d1;
   min-height: 100vh;
   width: 100vw;
   display: flex;
@@ -11,10 +11,13 @@ body {
   margin: 0;
 }
 
-h1,
-.score,
-.hi-score {
+h1 {
   font-family: "Mystery Quest", cursive, sans-serif;
+}
+
+.game-board-container {
+  width: 90vmin;
+  height: 90vmin;
 }
 
 #game-board {
@@ -33,4 +36,36 @@ h1,
 
 .food {
   background: red;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background: #d9c1d1 url(../img/bg-plain-tablet.png) center center / cover
+      no-repeat;
+    display: block;
+    margin: 5px;
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  img {
+    display: none;
+  }
+
+  h1 {
+    margin: 2px 0;
+  }
+
+  #game-board {
+    background: transparent;
+    width: 75vmin;
+    height: 75vmin;
+    position: absolute;
+    top: 15vh;
+    right: 50px;
+  }
 }
