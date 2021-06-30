@@ -2,7 +2,7 @@ import { getInputDirection } from "./input.js";
 import { incrementScore, getHiScore } from "./game.js";
 
 // snake global variables
-export const snakeSpeed = 5;
+export let snakeSpeed = 2;
 const snakeBody = [{ x: 21, y: 21 }];
 
 let newSegments = 0;
@@ -33,6 +33,7 @@ export function growSnake(amount) {
   newSegments += amount;
   incrementScore();
   getHiScore();
+  increaseSnakeSpeed();
 }
 
 export function onSnake(position, { ignoreHead = false } = {}) {
@@ -60,4 +61,12 @@ function addSegments() {
   }
 
   newSegments = 0;
+}
+
+function increaseSnakeSpeed() {
+  snakeSpeed += 0.25;
+  let currentSpeed = parseInt(document.getElementById("level").innerText);
+  if (Number.isInteger(snakeSpeed)) {
+    document.getElementById("level").innerText = ++currentSpeed;
+  }
 }
