@@ -50,3 +50,8 @@ function draw() {
 function checkDeath() {
   gameOver = outsideGrid(getSnakeHead()) || snakeIntersection();
 }
+
+export function incrementScore() {
+  let score = parseInt(document.getElementById("score").innerText);
+  document.getElementById("score").innerText = ++score;
+}

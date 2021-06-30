@@ -1,4 +1,5 @@
 import { getInputDirection } from "./input.js";
+import { incrementScore } from "./game.js";
 
 // snake global variables
 export const snakeSpeed = 5;
@@ -31,11 +32,6 @@ export function draw(gameBoard) {
 export function growSnake(amount) {
   newSegments += amount;
   incrementScore();
-}
-
-function incrementScore() {
-  let score = parseInt(document.getElementById("score").innerText);
-  document.getElementById("score").innerText = ++score;
 }
 
 export function onSnake(position, { ignoreHead = false } = {}) {
