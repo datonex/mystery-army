@@ -69,3 +69,24 @@ h1 {
     right: 50px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    background: #d9c1d1 url(../img/bg-plain-mobile.png) top left / cover
+      no-repeat;
+  }
+
+  h1 {
+    margin: 2% 20%;
+  }
+
+  .info-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  #game-board {
+    top: 20vh;
+  }
+}
