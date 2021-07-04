@@ -3,31 +3,44 @@
 body {
   font-family: "Quicksand", sans-serif;
   background: #d9c1d1;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0;
+  overflow: hidden;
 }
 
 h1 {
   font-family: "Mystery Quest", cursive, sans-serif;
+  font-size: 60px;
 }
 
-.game-board-container {
-  width: 90vmin;
-  height: 90vmin;
+div {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
 }
 
+.info-container {
+  margin-top: 20px;
+}
+
+#score,
+#hiscore,
+#level {
+  font-size: 25px;
+  font-weight: 900;
+}
 #game-board {
   background-color: #d9c1d1;
   border: 4px solid #2a1c33;
   width: 90vmin;
   height: 90vmin;
   display: grid;
-  grid-template-rows: repeat(40, 1fr);
-  grid-template-columns: repeat(40, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
 }
 
 .snake {
@@ -43,7 +56,6 @@ h1 {
     background: #d9c1d1 url(../img/bg-plain-tablet.png) center center / cover
       no-repeat;
     display: block;
-    margin: 5px;
   }
 
   .info-container {
@@ -57,7 +69,18 @@ h1 {
   }
 
   h1 {
-    margin: 2px 0;
+    margin: 5px 0;
+    font-size: 40px;
+  }
+
+  div {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  .info-container {
+    margin-left: 5px;
   }
 
   #game-board {
@@ -75,18 +98,42 @@ h1 {
     background: #d9c1d1 url(../img/bg-plain-mobile.png) top left / cover
       no-repeat;
   }
+  .h1-container {
+    height: 50px;
+    width: 100%;
+    margin: 5% 0;
+  }
 
   h1 {
-    margin: 2% 20%;
+    text-align: center;
+    font-size: 8vw;
+    margin: 0;
+  }
+
+  div {
+    font-size: 5vw;
   }
 
   .info-container {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    height: 125px;
   }
 
   #game-board {
+    margin-top: 5px;
     top: 20vh;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info-container {
+    height: 80px;
+  }
+  #game-board {
+    top: 35vh;
+    right: 5px;
   }
 }
