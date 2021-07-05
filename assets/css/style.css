@@ -50,6 +50,9 @@ div {
 .food {
   background: red;
 }
+.btn {
+  display: none;
+}
 
 @media screen and (max-width: 1200px) {
   body {
@@ -99,9 +102,7 @@ div {
       no-repeat;
   }
   .h1-container {
-    height: 50px;
     width: 100%;
-    margin: 5% 0;
   }
 
   h1 {
@@ -118,13 +119,41 @@ div {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    height: 125px;
+    height: 100px;
   }
 
   #game-board {
     margin-top: 5px;
     top: 20vh;
     right: 30px;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    bottom: 2vh;
+    right: 15vw;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 40px;
+    width: 40px;
+    padding: 2px;
+  }
+
+  .align-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -135,5 +164,16 @@ div {
   #game-board {
     top: 35vh;
     right: 5px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #game-board {
+    top: 20vh;
+    right: 5px;
+  }
+
+  .btn-container {
+    bottom: 1vh;
   }
 }
