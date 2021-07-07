@@ -15,16 +15,7 @@ body {
 h1 {
   font-family: "Mystery Quest", cursive, sans-serif;
   font-size: 60px;
-}
-
-div {
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.5px;
-}
-
-.info-container {
-  margin-top: 20px;
+  text-align: center;
 }
 
 #score,
@@ -32,7 +23,23 @@ div {
 #level {
   font-size: 25px;
   font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0.5px;
 }
+
+.score-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
 #game-board {
   background-color: #d9c1d1;
   border: 4px solid #2a1c33;
@@ -65,6 +72,7 @@ div {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 5px;
   }
 
   img {
@@ -80,10 +88,6 @@ div {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.5px;
-  }
-
-  .info-container {
-    margin-left: 5px;
   }
 
   #game-board {
