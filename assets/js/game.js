@@ -35,7 +35,7 @@ const hiScore = localStorage.getItem("hiscore");
 function main(currentTime) {
   if (gameOver) {
     if (confirm("Oh no the wizard caught you! Press ok to restart.")) {
-      window.location = "/"; // refresh the browser and start the game
+      window.location = "/game.html"; // refresh the browser and start the game
     }
     return;
   }
