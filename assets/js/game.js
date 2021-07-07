@@ -18,6 +18,7 @@ let gameOver = false;
 let gamePaused = false;
 let score = parseInt(document.getElementById("score").innerText);
 const gameBoard = document.getElementById("game-board");
+const pauseMenu = document.getElementById("pause-menu");
 const hiScore = localStorage.getItem("hiscore");
 
 /**
@@ -40,6 +41,12 @@ function main(currentTime) {
     }
     return;
   }
+  if (gamePaused) {
+    show(pauseMenu);
+    return;
+  } else {
+    hide(pauseMenu);
+  }
   window.requestAnimationFrame(main);
 
   const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000; // ms to s
@@ -47,7 +54,6 @@ function main(currentTime) {
 
   lastRenderTime = currentTime;
 
-  if (gamePaused) return;
   update();
   draw();
 }
@@ -98,6 +104,14 @@ function checkDeath() {
 export function pauseGame() {
   gamePaused = !gamePaused;
   if (!gamePaused) main(currentTime);
+}
+
+function hide(element) {
+  element.style.display = "none";
+}
+
+function show(element) {
+  element.style.display = "block";
 }
 
 /**
