@@ -17,20 +17,29 @@
     <script src="https://kit.fontawesome.com/20692f6912.js" crossorigin="anonymous"></script>
     <title>Snake & The Wizard</title>
   </head>
-  <body>
-    <div id="menu" class="main">
-      <div id="main">
-        <h1>The Snake & The Wizard</h1>
-        <p>The wizard has trapped you and turned you into a snake!</p>
-        <p>You will have to eat and grow your way to freedom!</p>
-        <ul>
-          <li>
-            <a href="/game.html" class="btn-menu play">Start Game</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)" class="btn-menu credits">Credits</a>
-          </li>
-        </ul>
+  <body data-swipe-threshold="100">
+    <div class="info-container">
+      <div class="h1-container"><h1>The Snake & The Wizard</h1></div>
+      <div class="score-container">
+        <div class="container">Score:<span id="score">0</span></div>
+        <div class="container">Hi-Score:<span id="hiscore">0</span></div>
+        <div class="container">Level:<span id="level">1</span></div>
+      </div>
+      <img src="assets/img/castle.png" alt="Scary castle" />
+    </div>
+    <div class="game-board-container"><div id="game-board"></div></div>
+    <div class="btn-container">
+      <div class="btn" id="arrow-up"><i class="fas fa-chevron-up"></i></div>
+      <div class="align-btn">
+        <div class="btn" id="arrow-left">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="btn" id="arrow-down">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="btn" id="arrow-right">
+          <i class="fas fa-chevron-right"></i>
+        </div>
       </div>
     </div>
 
