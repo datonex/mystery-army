@@ -1,11 +1,15 @@
 import "./libraries/swiped-events/dist/swiped-events.min.js";
+import { pauseGame } from "./game.js";
 
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
 
 // Add keyboard event listeners
-window.addEventListener("keyup", (e) => {
+window.addEventListener("keydown", (e) => {
   switch (e.key) {
+    case " ":
+      pauseGame();
+      break;
     // Use arrow keys in game
     case "ArrowUp":
       if (lastInputDirection.y !== 0) break; // Stop snake from moving down if currently moving up

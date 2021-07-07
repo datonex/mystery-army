@@ -15,6 +15,7 @@ import { outsideGrid } from "./grid.js";
 
 let lastRenderTime = 0;
 let gameOver = false;
+let gamePaused = false;
 let score = parseInt(document.getElementById("score").innerText);
 const gameBoard = document.getElementById("game-board");
 const hiScore = localStorage.getItem("hiscore");
@@ -46,6 +47,7 @@ function main(currentTime) {
 
   lastRenderTime = currentTime;
 
+  if (gamePaused) return;
   update();
   draw();
 }
@@ -88,6 +90,14 @@ function draw() {
  */
 function checkDeath() {
   gameOver = outsideGrid(getSnakeHead()) || snakeIntersection();
+}
+
+/**
+ * This function will check if the game loop has been turn on or off, effectively pausing the game
+ */
+export function pauseGame() {
+  gamePaused = !gamePaused;
+  if (!gamePaused) main(currentTime);
 }
 
 /**
