@@ -2,20 +2,81 @@
 
 body {
   font-family: "Quicksand", sans-serif;
-  background: #d9c1d1;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   margin: 0;
-  overflow: hidden;
+  background: #d9c1d1;
+  color: #2a1c33;
 }
 
 h1 {
   font-family: "Mystery Quest", cursive, sans-serif;
   font-size: 60px;
   text-align: center;
+}
+
+/* Main menu styling */
+.main-menu {
+  background: #2a1c33 url(../img/bg.jpg) center center / cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container {
+  background: rgba(217, 193, 209, 0.9);
+  height: 450px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.menu-container h1 {
+  margin: 0 0 50px;
+  font-size: 50px;
+}
+
+.menu-container p {
+  margin: 0 60px 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #d9c1d1;
+  font-weight: 600;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-menu {
+  background: #2a1c33;
+  width: 150px;
+  height: 35px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+/* Game styling settings */
+.game-page {
+  background: #d9c1d1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
 }
 
 #score,
@@ -62,7 +123,7 @@ h1 {
 }
 
 @media screen and (max-width: 1200px) {
-  body {
+  .game-page {
     background: #d9c1d1 url(../img/bg-plain-tablet.png) center center / cover
       no-repeat;
     display: block;
@@ -101,7 +162,7 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-  body {
+  .game-page {
     background: #d9c1d1 url(../img/bg-plain-mobile.png) top left / cover
       no-repeat;
   }
