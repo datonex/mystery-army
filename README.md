@@ -336,5 +336,6 @@ Each bit of content must have its own link and displayed as a list
 - key code values [WesBos](https://keycode.info/)
 - Code Institute [Love Maths](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) Project
 - How to access local storage using **JavaScript** from [Michael Karen](https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68)
+- Game user interface [Steven Lambert](https://blog.sklambert.com/html5-game-tutorial-game-ui-canvas-vs-dom/)
 
 - Thank you to my mentor for his support and guidance
