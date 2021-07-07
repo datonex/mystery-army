@@ -71,7 +71,7 @@ li {
 }
 
 /* Game styling settings */
-.game-page {
+#game-page {
   background: #d9c1d1;
   display: flex;
   justify-content: space-around;
@@ -123,7 +123,7 @@ li {
 }
 
 @media screen and (max-width: 1200px) {
-  .game-page {
+  #game-page {
     background: #d9c1d1 url(../img/bg-plain-tablet.png) center center / cover
       no-repeat;
     display: block;
@@ -162,7 +162,7 @@ li {
 }
 
 @media screen and (max-width: 600px) {
-  .game-page {
+  #game-page {
     background: #d9c1d1 url(../img/bg-plain-mobile.png) top left / cover
       no-repeat;
   }
