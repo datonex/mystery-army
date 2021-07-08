@@ -46,9 +46,31 @@ export function draw(gameBoard) {
     const snakeElement = document.createElement("div"); // Each snake segment is contained in new div
     snakeElement.style.gridRowStart = segment.y;        // Draw segment in y direction on grid
     snakeElement.style.gridColumnStart = segment.x;     // Draw segment in x direction on grid
-    index === 0 ? snakeElement.classList.add("head") : snakeElement.classList.add("snake");
-    gameBoard.appendChild(snakeElement);                // Append div onto the game board
+    // If snake head is not defined, draw snake head otherwise draw body
+    index === 0 ? drawSnakeHead(snakeElement) : snakeElement.classList.add("snake");
+    gameBoard.appendChild(snakeElement);                // Append div onto the game board   
   });
+}
+
+/**
+ * This function will determine which direction the head of the snake will face. It is dependent on
+ * the direction it is going.
+ * @param {HTMLDivElement} snakeElement The snake div Element
+ */
+export function drawSnakeHead(snakeElement) {
+  const direction = getInputDirection();
+
+  if (direction.y === -1) {
+    snakeElement.classList.add("head-up");
+  } else if (direction.y === 1) {
+    snakeElement.classList.add("head-down");
+  } else if (direction.x === -1) {
+    snakeElement.classList.add("head-left");
+  } else if (direction.x === 1) {
+    snakeElement.classList.add("head-right");
+  } else {
+    snakeElement.classList.add("head-up");
+  }
 }
 
 /**

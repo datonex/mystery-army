@@ -128,8 +128,20 @@ ul {
   grid-template-columns: repeat(10, 1fr);
 }
 
-.head {
+.head-up {
   background: url(../img/snake-head-up.png) center center / cover no-repeat;
+}
+
+.head-down {
+  background: url(../img/snake-head-down.png) center center / cover no-repeat;
+}
+
+.head-left {
+  background: url(../img/snake-head-left.png) center center / cover no-repeat;
+}
+
+.head-right {
+  background: url(../img/snake-head-right.png) center center / cover no-repeat;
 }
 
 .snake {
