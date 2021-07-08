@@ -128,12 +128,16 @@ ul {
   grid-template-columns: repeat(10, 1fr);
 }
 
+.head {
+  background: url(../img/snake-head-up.png) center center / cover no-repeat;
+}
+
 .snake {
-  background: #2a1c33;
+  background: url(../img/snake-body.png) center center / cover no-repeat;
 }
 
 .food {
-  background: red;
+  background: url(../img/apple.png) center center / cover no-repeat;
 }
 .btn {
   display: none;

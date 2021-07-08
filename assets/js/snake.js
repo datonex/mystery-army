@@ -42,11 +42,11 @@ export function update() {
  */
 // prettier-ignore
 export function draw(gameBoard) {
-  snakeBody.forEach((segment) => {
+  snakeBody.forEach((segment,index) => {
     const snakeElement = document.createElement("div"); // Each snake segment is contained in new div
     snakeElement.style.gridRowStart = segment.y;        // Draw segment in y direction on grid
     snakeElement.style.gridColumnStart = segment.x;     // Draw segment in x direction on grid
-    snakeElement.classList.add("snake");                // Add snake class to new segment
+    index === 0 ? snakeElement.classList.add("head") : snakeElement.classList.add("snake");
     gameBoard.appendChild(snakeElement);                // Append div onto the game board
   });
 }
