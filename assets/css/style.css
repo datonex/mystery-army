@@ -88,6 +88,20 @@ ul {
   display: none;
 }
 
+#game-over-menu .menu-container {
+  background: transparent;
+}
+
+#game-over-menu {
+  background: transparent;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
 /* Game styling settings */
 #game-page {
   background: #d9c1d1;
