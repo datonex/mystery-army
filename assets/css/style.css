@@ -268,6 +268,37 @@ ul {
     justify-content: center;
     align-items: center;
   }
+
+  .main-menu {
+    background: #2a1c33 url(../img/bg.jpg) top left / cover no-repeat;
+  }
+
+  .menu-container {
+    height: 75vmax;
+    width: 80vmin;
+    object-fit: cover;
+  }
+
+  .menu-container h1 {
+    margin: 0 0 10%;
+    font-size: 8vmin;
+    line-height: 8vmin;
+  }
+
+  .menu-container p {
+    margin: 0 10px 10%;
+    font-size: 4vmin;
+  }
+
+  a {
+    font-size: 4vmin;
+  }
+
+  .btn-menu {
+    width: 125px;
+    height: 40px;
+    margin: 15% 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -288,5 +319,24 @@ ul {
 
   .btn-container {
     bottom: 1vh;
+  }
+
+  .menu-container {
+    height: 88vmax;
+    width: 80vmin;
+  }
+
+  .btn-menu {
+    height: 30px;
+  }
+
+  .menu-container h1 {
+    margin: 0 0 5px;
+    font-size: 8vmin;
+  }
+
+  .menu-container p {
+    margin: 0 10px 5px;
+    font-size: 4vmin;
   }
 }
