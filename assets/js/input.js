@@ -1,5 +1,5 @@
 import "./libraries/swiped-events/dist/swiped-events.min.js";
-import { pauseGame } from "./game.js";
+import { pauseGame, checkDeath } from "./game.js";
 
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
@@ -73,6 +73,15 @@ window.addEventListener("swiped", function (e) {
       if (lastInputDirection.x !== 0) break;
       inputDirection = { x: 1, y: 0 };
       break;
+  }
+});
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && checkDeath()) {
+    console.log(checkDeath());
+    location.reload();
+  } else {
+    return;
   }
 });
 

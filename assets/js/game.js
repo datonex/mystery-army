@@ -21,6 +21,7 @@ let gamePaused = false;
 let score = document.getElementById("score").innerText;
 const gameBoard = document.getElementById("game-board");
 const pauseMenu = document.getElementById("pause-menu");
+const restartMenu = document.getElementById("game-over-menu");
 const hiScore = localStorage.getItem("hiscore");
 
 /**
@@ -38,11 +39,16 @@ const hiScore = localStorage.getItem("hiscore");
  */
 function main(currentTime) {
   if (gameOver) {
-    if (confirm("Oh no the wizard caught you! Press ok to restart.")) {
-      window.location = "/game.html"; // refresh the browser and start the game
-    }
+    show(restartMenu);
     return;
+  } else {
+    hide(restartMenu);
   }
+  //   if (confirm("Oh no the wizard caught you! Press ok to restart.")) {
+  //     window.location = "/game.html"; // refresh the browser and start the game
+  //   }
+  //   return;
+  // }
 
   window.requestAnimationFrame(main);
 
@@ -97,8 +103,9 @@ function draw() {
  * @function
  * @requires module:grid
  */
-function checkDeath() {
+export function checkDeath() {
   gameOver = outsideGrid(getSnakeHead()) || snakeIntersection();
+  return gameOver;
 }
 
 /**
