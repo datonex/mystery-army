@@ -1,5 +1,7 @@
-// Game module will deal with all the game logic. This include updating the visuals of the game,
-// when the player looses the game and updating the scores.
+/* 
+Game module will deal with all the game logic. This include updating the visuals of the game,
+when the player looses the game and updating the scores.
+*/
 
 import {
   draw as drawSnake,
@@ -16,7 +18,7 @@ import { outsideGrid } from "./grid.js";
 let lastRenderTime = 0;
 let gameOver = false;
 let gamePaused = false;
-let score = parseInt(document.getElementById("score").innerText);
+let score = document.getElementById("score").innerText;
 const gameBoard = document.getElementById("game-board");
 const pauseMenu = document.getElementById("pause-menu");
 const hiScore = localStorage.getItem("hiscore");
@@ -104,7 +106,7 @@ function checkDeath() {
  */
 export function pauseGame() {
   gamePaused = !gamePaused;
-  if (!gamePaused) main(currentTime);
+  if (gamePaused) main(lastRenderTime);
 }
 
 function hide(element) {
@@ -142,8 +144,10 @@ export function getHiScore() {
     document.getElementById("hiscore").innerText = hiScore;
   }
 
-  // If statement will compare the stored high score with the current high score. If the the current 
-  // score is bigger than the one in storage, the new score will update the one in local storage.
+  /* 
+    If statement will compare the stored high score with the current high score. If the the current 
+    score is bigger than the one in storage, the new score will update the one in local storage.
+  */
   if (score > scoreEval) { 
     scoreEval = score;
     localStorage.setItem("hiscore", JSON.stringify(scoreEval));
