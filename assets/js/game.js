@@ -41,12 +41,7 @@ function main(currentTime) {
     }
     return;
   }
-  if (gamePaused) {
-    show(pauseMenu);
-    return;
-  } else {
-    hide(pauseMenu);
-  }
+
   window.requestAnimationFrame(main);
 
   const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000; // ms to s
@@ -54,6 +49,12 @@ function main(currentTime) {
 
   lastRenderTime = currentTime;
 
+  if (gamePaused) {
+    show(pauseMenu);
+    return;
+  } else {
+    hide(pauseMenu);
+  }
   update();
   draw();
 }
