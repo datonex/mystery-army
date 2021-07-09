@@ -5,10 +5,6 @@ let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
 const settingsMenu = document.getElementById("settings-menu");
 const mainMenu = document.getElementById("main-menu");
-const settingsBtn = document.getElementsByClassName("settings")[0];
-const backToMenu = document.getElementsByClassName(
-  "fas fa-arrow-circle-left"
-)[0];
 
 // Add keyboard event listeners
 window.addEventListener("keydown", (e) => {
@@ -82,6 +78,7 @@ window.addEventListener("swiped", function (e) {
   }
 });
 
+// Use enter button to restart game when user looses
 window.addEventListener("keydown", (e) => {
   if (e.key === "Enter" && checkDeath()) {
     console.log(checkDeath());
@@ -91,19 +88,34 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-function toggleSettings() {
+//
+// prettier-ignore
+window.addEventListener("click", (e) => {
+  console.log(e.target.className);
+  if (
+    e.target.className === "btn-menu settings" ||
+    e.target.className === "settings"
+  ) {
+    toggleSettingsOn();
+    return;
+  } else if (e.target.className === "back-to-menu" ||
+  e.target.className === "fas fa-arrow-circle-left") {
+    toggleSettingsOff();
+    return;
+  } else {
+    return;
+  }
+});
+
+function toggleSettingsOn() {
   show(settingsMenu);
   hide(mainMenu);
 }
 
-settingsBtn.onclick = function () {
-  toggleSettings();
-};
-
-backToMenu.onclick = function () {
+function toggleSettingsOff() {
   hide(settingsMenu);
   show(mainMenu);
-};
+}
 
 /**
  * This function will get the current input direction from the user. Function is called in @see update
