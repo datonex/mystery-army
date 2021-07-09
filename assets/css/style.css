@@ -42,13 +42,8 @@ h2 {
   border-radius: 10px;
 }
 
-.back-arrow-btn {
-  position: absolute;
-  top: 8%;
-  left: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#back-content {
+  margin: 0 10px;
 }
 
 .back-arrow-btn i {
