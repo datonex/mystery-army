@@ -44,10 +44,11 @@ export function update() {
 export function draw(gameBoard) {
   snakeBody.forEach((segment,index) => {
     const snakeElement = document.createElement("div"); // Each snake segment is contained in new div
+    
     snakeElement.style.gridRowStart = segment.y;        // Draw segment in y direction on grid
     snakeElement.style.gridColumnStart = segment.x;     // Draw segment in x direction on grid
     // If snake head is not defined, draw snake head otherwise draw body
-    index === 0 ? drawSnakeHead(snakeElement) : snakeElement.classList.add("snake");
+    index ? snakeElement.classList.add("snake") : drawSnakeHead(snakeElement);
     gameBoard.appendChild(snakeElement);                // Append div onto the game board   
   });
 }
@@ -60,9 +61,9 @@ export function draw(gameBoard) {
 export function drawSnakeHead(snakeElement) {
   const direction = getInputDirection();
 
-  if (direction.y === -1) {
-    snakeElement.classList.add("head-up");
-  } else if (direction.y === 1) {
+  if (direction.y === 1) {
+    //   snakeElement.classList.add("head-up");
+    // } else if (direction.y === 1) {
     snakeElement.classList.add("head-down");
   } else if (direction.x === -1) {
     snakeElement.classList.add("head-left");
@@ -127,7 +128,7 @@ export function getSnakeHead() {
  * @returns {object} position of the snake head and
  */
 export function snakeIntersection() {
-  return onSnake(snakeBody[0], { ignoreHead: true });
+  return onSnake(getSnakeHead(), { ignoreHead: true });
 }
 
 /**
