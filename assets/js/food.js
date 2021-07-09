@@ -47,7 +47,7 @@ export function draw(gameBoard) {
  */
 function getRandomFoodPosition() {
   let newFoodPosition;
-  while (newFoodPosition == null || onSnake(newFoodPosition)) {
+  while (!newFoodPosition || onSnake(newFoodPosition)) {
     newFoodPosition = randomGridPosition();
   }
   return newFoodPosition;
