@@ -166,9 +166,6 @@ ul {
 .food {
   background: url(../img/apple.png) center center / cover no-repeat;
 }
-.btn {
-  display: none;
-}
 
 @media screen and (max-width: 1200px) {
   #game-page {
@@ -251,22 +248,6 @@ ul {
     position: absolute;
     bottom: 2vh;
     right: 15vw;
-  }
-
-  .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
-    height: 40px;
-    width: 40px;
-    padding: 2px;
-  }
-
-  .align-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .main-menu {
