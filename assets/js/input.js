@@ -5,7 +5,7 @@ let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
 const settingsMenu = document.getElementById("settings-menu");
 const mainMenu = document.getElementById("main-menu");
-
+// TODO clean up arrows
 // Add keyboard event listeners
 window.addEventListener("keydown", (e) => {
   switch (e.key) {
@@ -14,36 +14,23 @@ window.addEventListener("keydown", (e) => {
       break;
     // Use arrow keys in game
     case "ArrowUp":
+    case "w":
       if (lastInputDirection.y !== 0) break; // Stop snake from moving down if currently moving up
       inputDirection = { x: 0, y: -1 };
       break;
     case "ArrowDown":
+    case "s":
       if (lastInputDirection.y !== 0) break; // Stop snake from moving up if currently moving down
       inputDirection = { x: 0, y: 1 };
       break;
     case "ArrowLeft":
+    case "a":
       if (lastInputDirection.x !== 0) break; // Stop snake from moving right if currently moving left
       inputDirection = { x: -1, y: 0 };
       break;
     case "ArrowRight":
-      if (lastInputDirection.x !== 0) break; // Stop snake from moving left if currently moving right
-      inputDirection = { x: 1, y: 0 };
-      break;
-    // use WASD keys in game
-    case "w":
-      if (lastInputDirection.y !== 0) break;
-      inputDirection = { x: 0, y: -1 };
-      break;
-    case "s":
-      if (lastInputDirection.y !== 0) break;
-      inputDirection = { x: 0, y: 1 };
-      break;
-    case "a":
-      if (lastInputDirection.x !== 0) break;
-      inputDirection = { x: -1, y: 0 };
-      break;
     case "d":
-      if (lastInputDirection.x !== 0) break;
+      if (lastInputDirection.x !== 0) break; // Stop snake from moving left if currently moving right
       inputDirection = { x: 1, y: 0 };
       break;
     default:
@@ -88,7 +75,7 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-//
+// Event listers to toggle between menu and settings boxes
 // prettier-ignore
 window.addEventListener("click", (e) => {
   console.log(e.target.className);
@@ -98,8 +85,9 @@ window.addEventListener("click", (e) => {
   ) {
     toggleSettingsOn();
     return;
-  } else if (e.target.className === "back-to-menu" ||
-  e.target.className === "fas fa-arrow-circle-left") {
+  } else if (
+    e.target.className === "back-to-menu" || 
+    e.target.className === "fas fa-arrow-circle-left") {
     toggleSettingsOff();
     return;
   } else {
@@ -107,11 +95,17 @@ window.addEventListener("click", (e) => {
   }
 });
 
+/**
+ * This function will show the settings and hide the main menu
+ */
 function toggleSettingsOn() {
   show(settingsMenu);
   hide(mainMenu);
 }
 
+/**
+ * This function will show the main and hide the settings menu
+ */
 function toggleSettingsOff() {
   hide(settingsMenu);
   show(mainMenu);
