@@ -1,5 +1,5 @@
 import "./libraries/swiped-events/dist/swiped-events.min.js";
-import { pauseGame, checkDeath } from "./game.js";
+import { checkDeath, togglePause } from "./game.js";
 
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
@@ -8,7 +8,7 @@ let lastInputDirection = { x: 0, y: 0 };
 window.addEventListener("keydown", (e) => {
   switch (e.key) {
     case " ":
-      pauseGame();
+      togglePause();
       break;
     // Use arrow keys in game
     case "ArrowUp":

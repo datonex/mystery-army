@@ -21,7 +21,8 @@ let gamePaused = false;
 let score = document.getElementById("score").innerText;
 const gameBoard = document.getElementById("game-board");
 const pauseMenu = document.getElementById("pause-menu");
-const restartMenu = document.getElementById("game-over-menu");
+const gameOverMenu = document.getElementById("game-over-menu");
+const settingsMenu = document.getElementById("settings-menu");
 const hiScore = localStorage.getItem("hiscore");
 
 /**
@@ -39,10 +40,10 @@ const hiScore = localStorage.getItem("hiscore");
  */
 function main(currentTime) {
   if (gameOver) {
-    show(restartMenu);
+    show(gameOverMenu);
     return;
   } else {
-    hide(restartMenu);
+    hide(gameOverMenu);
   }
   //   if (confirm("Oh no the wizard caught you! Press ok to restart.")) {
   //     window.location = "/game.html"; // refresh the browser and start the game
@@ -111,15 +112,24 @@ export function checkDeath() {
 /**
  * This function will check if the game loop has been turn on or off, effectively pausing the game
  */
-export function pauseGame() {
+export function togglePause() {
   gamePaused = !gamePaused;
   if (gamePaused) main(lastRenderTime);
 }
 
+/**
+ * This function will hide any document DOM object from the user
+ *
+ * @param {HTMElement} element and HTML DOM object
+ */
 function hide(element) {
   element.style.display = "none";
 }
 
+/**
+ * This function will show any document DOM object to the user
+ * @param {HTMLElement} element
+ */
 function show(element) {
   element.style.display = "block";
 }
@@ -133,7 +143,8 @@ export function incrementScore() {
   document.getElementById("score").innerText = ++score;
 }
 
-/** This function will obtain the high score from the user's local storage. If the high score is less
+/**
+ * This function will obtain the high score from the user's local storage. If the high score is less
  * than the current score, the new high score is stored in the local storage. Function
  * is called in @see growSnake in @module snake
  *
