@@ -3,10 +3,12 @@ import { checkDeath, togglePause, show, hide } from "./game.js";
 
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
-let homepage = "http://127.0.0.1:5500/index.html";
 const settingsMenu = document.getElementById("settings-menu");
 const mainMenu = document.getElementById("main-menu");
 const settingsBtn = document.getElementsByClassName("settings")[0];
+const backToMenu = document.getElementsByClassName(
+  "fas fa-arrow-circle-left"
+)[0];
 
 // Add keyboard event listeners
 window.addEventListener("keydown", (e) => {
@@ -96,6 +98,11 @@ function toggleSettings() {
 
 settingsBtn.onclick = function () {
   toggleSettings();
+};
+
+backToMenu.onclick = function () {
+  hide(settingsMenu);
+  show(mainMenu);
 };
 
 /**
