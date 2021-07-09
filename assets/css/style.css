@@ -21,7 +21,7 @@ h2 {
 }
 
 /* Main menu styling */
-.main-menu {
+.menu-bg {
   background: #2a1c33 url(../img/bg.jpg) center center / cover no-repeat;
   height: 100vh;
   width: 100vw;
@@ -77,6 +77,10 @@ ul {
   height: 35px;
   margin: 20px 0;
   border-radius: 10px;
+}
+
+#main-menu {
+  display: block;
 }
 
 #pause-menu .menu-container,
@@ -248,7 +252,7 @@ ul {
     right: 15vw;
   }
 
-  .main-menu {
+  .menu-bg {
     background: #2a1c33 url(../img/bg.jpg) top left / cover no-repeat;
   }
 

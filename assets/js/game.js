@@ -22,7 +22,6 @@ let score = document.getElementById("score").innerText;
 const gameBoard = document.getElementById("game-board");
 const pauseMenu = document.getElementById("pause-menu");
 const gameOverMenu = document.getElementById("game-over-menu");
-const settingsMenu = document.getElementById("settings-menu");
 const hiScore = localStorage.getItem("hiscore");
 
 /**
@@ -120,17 +119,17 @@ export function togglePause() {
 /**
  * This function will hide any document DOM object from the user
  *
- * @param {HTMElement} element and HTML DOM object
+ * @param {HTMElement} element HTML DOM object
  */
-function hide(element) {
+export function hide(element) {
   element.style.display = "none";
 }
 
 /**
  * This function will show any document DOM object to the user
- * @param {HTMLElement} element
+ * @param {HTMLElement} element HTML DOM object
  */
-function show(element) {
+export function show(element) {
   element.style.display = "block";
 }
 

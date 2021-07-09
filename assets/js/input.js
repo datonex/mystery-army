@@ -1,8 +1,12 @@
 import "./libraries/swiped-events/dist/swiped-events.min.js";
-import { checkDeath, togglePause } from "./game.js";
+import { checkDeath, togglePause, show, hide } from "./game.js";
 
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
+let homepage = "http://127.0.0.1:5500/index.html";
+const settingsMenu = document.getElementById("settings-menu");
+const mainMenu = document.getElementById("main-menu");
+const settingsBtn = document.getElementsByClassName("settings")[0];
 
 // Add keyboard event listeners
 window.addEventListener("keydown", (e) => {
@@ -84,6 +88,15 @@ window.addEventListener("keydown", (e) => {
     return;
   }
 });
+
+function toggleSettings() {
+  show(settingsMenu);
+  hide(mainMenu);
+}
+
+settingsBtn.onclick = function () {
+  toggleSettings();
+};
 
 /**
  * This function will get the current input direction from the user. Function is called in @see update
