@@ -15,6 +15,11 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 60px;
+  text-align: center;
+}
+
 /* Main menu styling */
 .main-menu {
   background: #2a1c33 url(../img/bg.jpg) center center / cover no-repeat;
@@ -74,11 +79,13 @@ ul {
   border-radius: 10px;
 }
 
-#pause-menu .menu-container {
+#pause-menu .menu-container,
+#game-over-menu .menu-container {
   background: transparent;
 }
 
-#pause-menu {
+#pause-menu,
+#game-over-menu {
   background: transparent;
   position: absolute;
   margin: 0 auto;
@@ -88,17 +95,7 @@ ul {
   display: none;
 }
 
-#game-over-menu .menu-container {
-  background: transparent;
-}
-
-#game-over-menu {
-  background: transparent;
-  position: absolute;
-  margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#settings-menu {
   display: none;
 }
 
@@ -185,7 +182,8 @@ ul {
     display: none;
   }
 
-  h1 {
+  h1,
+  h2 {
     margin: 5px 0;
     font-size: 40px;
   }
@@ -215,8 +213,8 @@ ul {
     width: 100%;
   }
 
-  h1 {
-    text-align: center;
+  h1,
+  h2 {
     font-size: 8vw;
     margin: 0;
   }
@@ -260,7 +258,8 @@ ul {
     object-fit: cover;
   }
 
-  .menu-container h1 {
+  .menu-container h1,
+  h2 {
     margin: 0 0 10%;
     font-size: 8vmin;
     line-height: 8vmin;
@@ -311,7 +310,8 @@ ul {
     height: 30px;
   }
 
-  .menu-container h1 {
+  .menu-container h1,
+  h2 {
     margin: 0 0 5px;
     font-size: 8vmin;
   }
