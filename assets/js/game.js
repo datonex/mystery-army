@@ -57,6 +57,10 @@ function main(currentTime) {
 
   lastRenderTime = currentTime;
 
+  /* 
+  Pausing a simple canvas game 
+  source https://stackoverflow.com/questions/43814422/how-to-pause-simple-canvas-game-made-with-js-and-html5/43814511
+  */
   if (gamePaused) {
     show(pauseMenu);
     return;
@@ -151,14 +155,16 @@ export function incrementScore() {
  */
 // prettier-ignore
 export function getHiScore() {
-  let scoreEval = 0;                                            // Default high score
-  if (hiScore === null) {
-    // Parse "scoreEval" into a JSON string and save to local storage
-    localStorage.setItem("hiscore", JSON.stringify(scoreEval)); 
-  } else {
+  // Default high score
+  let scoreEval = 0;  
+
+  if (hiScore) {
     scoreEval = JSON.parse(hiScore);
     // Parse hiScore into a JSON array if high score is not zero.                            
     document.getElementById("hiscore").innerText = hiScore;
+  } else {
+    // Parse "scoreEval" into a JSON string and save to local storage
+    localStorage.setItem("hiscore", JSON.stringify(scoreEval)); 
   }
 
   /* 
