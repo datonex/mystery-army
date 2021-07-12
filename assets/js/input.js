@@ -1,5 +1,11 @@
 import "./libraries/swiped-events/dist/swiped-events.min.js";
-import { checkDeath, togglePause, startGame, toggleSettings } from "./game.js";
+import {
+  checkDeath,
+  togglePause,
+  startGame,
+  toggleSettings,
+  toggleGameStart,
+} from "./game.js";
 
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
@@ -51,7 +57,7 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-// Add touch event listeners for touchscreen devices
+// Add touch event listeners for touchscreen devices from swiped-events import
 window.addEventListener("swiped", function (e) {
   switch (e.detail.dir) {
     case "up":
@@ -71,6 +77,10 @@ window.addEventListener("swiped", function (e) {
       inputDirection = { x: 1, y: 0 };
       break;
   }
+});
+
+window.addEventListener("touchstart", (e) => {
+  toggleGameStart();
 });
 
 window.addEventListener("click", (e) => {

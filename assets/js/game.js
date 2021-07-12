@@ -19,13 +19,12 @@ let lastRenderTime = 0;
 let gameOver = false;
 let gamePaused = false;
 let showSettings = false;
+let gameScreen = false;
 let score = document.getElementById("score").innerText;
 export const gameBoard = document.getElementById("game-board");
 export const pauseMenu = document.getElementById("pause-menu");
 export const gameOverMenu = document.getElementById("game-over-menu");
 export const settingsMenu = document.getElementById("settings-menu");
-export const gamePage = document.getElementById("game-content");
-export const startPage = document.getElementById("start-menu");
 const hiScore = localStorage.getItem("hiscore");
 
 /**
@@ -114,8 +113,8 @@ function draw() {
 }
 
 /**
- * This function will test if the head of the snake hits the boarder or the head of the snake hits its
- * own body
+ * This function will test if the head of the snake hits the boarder or the head of the snake hits
+ * its own body
  *
  * @requires module:snake
  * @function
@@ -127,6 +126,17 @@ export function checkDeath() {
 }
 
 /**
+ * This function will check if the start page page is on or off. If it's on the game board will be
+ * shown.
+ */
+export function toggleGameStart() {
+  gameScreen = !gameScreen;
+  if (gameScreen) {
+    startGame();
+  }
+}
+
+/**
  * This function will check if the game loop has been turn on or off, effectively pausing the game
  */
 export function togglePause() {
@@ -134,6 +144,10 @@ export function togglePause() {
   if (gamePaused) main(lastRenderTime);
 }
 
+/**
+ * This function will check if the setting page is displayed on the screen. If it is everything on
+ * the page will be hidden except for the settings page
+ */
 export function toggleSettings() {
   showSettings = !showSettings;
   if (showSettings) {
@@ -202,15 +216,28 @@ export function show(element) {
   element.style.display = "block";
 }
 
+/**
+ * This function will blur any DOM object
+ * @param {HTMLElement} element HTML DOM object
+ */
 export function blur(element) {
   element.style.filter = "blur(1rem)";
 }
 
+/**
+ * This function will remove the blur style
+ * @param {HTMLElement} element HTML DOM object
+ */
 export function unblur(element) {
   element.style.filter = "blur(0)";
 }
 
+/**
+ * This function will display the game board to the user
+ */
 export function startGame() {
+  const startPage = document.getElementById("start-menu");
+  const gamePage = document.getElementById("game-content");
   hide(startPage);
   show(gamePage);
 }
