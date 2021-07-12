@@ -19,9 +19,10 @@ let lastRenderTime = 0;
 let gameOver = false;
 let gamePaused = false;
 let score = document.getElementById("score").innerText;
-const gameBoard = document.getElementById("game-board");
+export const gameBoard = document.getElementById("game-board");
 const pauseMenu = document.getElementById("pause-menu");
 const gameOverMenu = document.getElementById("game-over-menu");
+// const gameContent = document.getElementById("game-content");
 const hiScore = localStorage.getItem("hiscore");
 
 /**
@@ -40,6 +41,7 @@ const hiScore = localStorage.getItem("hiscore");
 function main(currentTime) {
   if (gameOver) {
     show(gameOverMenu);
+    blur(gameBoard);
     return;
   } else {
     hide(gameOverMenu);
@@ -63,9 +65,11 @@ function main(currentTime) {
   */
   if (gamePaused) {
     show(pauseMenu);
+    blur(gameBoard);
     return;
   } else {
     hide(pauseMenu);
+    unblur(gameBoard);
   }
   update();
   draw();
@@ -176,6 +180,14 @@ export function hide(element) {
  */
 export function show(element) {
   element.style.display = "block";
+}
+
+export function blur(element) {
+  element.style.filter = "blur(1rem)";
+}
+
+export function unblur(element) {
+  element.style.filter = "blur(0)";
 }
 
 export function startGame() {
