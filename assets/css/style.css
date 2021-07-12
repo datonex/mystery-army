@@ -24,6 +24,10 @@ h2 {
   text-align: center;
 }
 
+h3 a {
+  color: #2a1c33;
+}
+
 /* Main menu styling */
 .menu-bg {
   background: #2a1c33 url(../img/bg.jpg) center center / cover no-repeat;
@@ -94,7 +98,10 @@ ul {
 
 #main-menu {
   display: block;
-  z-index: 10;
+}
+
+#credits-menu {
+  display: none;
 }
 
 #pause-menu .menu-container,
@@ -113,7 +120,6 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  z-index: 10;
 }
 
 /* Game styling settings */
