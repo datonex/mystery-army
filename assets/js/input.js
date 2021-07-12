@@ -1,39 +1,51 @@
 import "./libraries/swiped-events/dist/swiped-events.min.js";
-import { checkDeath, togglePause, show, hide, startGame } from "./game.js";
+import {
+  checkDeath,
+  togglePause,
+  show,
+  hide,
+  startGame,
+  settingsMenu,
+  gameOverMenu,
+  pauseMenu,
+  gameBoard,
+  toggleSettings,
+  //  toggleSettings,
+} from "./game.js";
 
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
-const settingsMenu = document.getElementById("settings-menu");
-const mainMenu = document.getElementById("main-menu");
 
 // Add keyboard event listeners
 window.addEventListener("keydown", (e) => {
   switch (e.key) {
-    case " ":
+    case "s":
+      toggleSettings();
+      break;
+    case "p":
       togglePause();
+      break;
+    case " ":
+      startGame();
       break;
     // Use arrow keys in game
     case "ArrowUp":
     case "w":
-      startGame();
       if (lastInputDirection.y !== 0) break; // Stop snake from moving down if currently moving up
       inputDirection = { x: 0, y: -1 };
       break;
     case "ArrowDown":
     case "s":
-      startGame();
       if (lastInputDirection.y !== 0) break; // Stop snake from moving up if currently moving down
       inputDirection = { x: 0, y: 1 };
       break;
     case "ArrowLeft":
     case "a":
-      startGame();
       if (lastInputDirection.x !== 0) break; // Stop snake from moving right if currently moving left
       inputDirection = { x: -1, y: 0 };
       break;
     case "ArrowRight":
     case "d":
-      startGame();
       if (lastInputDirection.x !== 0) break; // Stop snake from moving left if currently moving right
       inputDirection = { x: 1, y: 0 };
       break;
@@ -55,22 +67,18 @@ window.addEventListener("keydown", (e) => {
 window.addEventListener("swiped", function (e) {
   switch (e.detail.dir) {
     case "up":
-      startGame();
       if (lastInputDirection.y !== 0) break;
       inputDirection = { x: 0, y: -1 };
       break;
     case "down":
-      startGame();
       if (lastInputDirection.y !== 0) break;
       inputDirection = { x: 0, y: 1 };
       break;
     case "left":
-      startGame();
       if (lastInputDirection.x !== 0) break;
       inputDirection = { x: -1, y: 0 };
       break;
     case "right":
-      startGame();
       if (lastInputDirection.x !== 0) break;
       inputDirection = { x: 1, y: 0 };
       break;
@@ -80,37 +88,15 @@ window.addEventListener("swiped", function (e) {
 // Event listers to toggle between menu and settings boxes
 // prettier-ignore
 window.addEventListener("click", (e) => {
-  if (
-    e.target.className === "btn-menu settings" ||
-    e.target.className === "settings"
-  ) {
-    toggleSettingsOn();
-    return;
-  } else if (
-    e.target.className === "back-to-menu" || 
-    e.target.className === "fas fa-arrow-circle-left") {
-    toggleSettingsOff();
-    return;
+  console.log(e.target.className)
+  if (e.target.className === "settings" || e.target.className === "fas fa-cog") {
+    toggleSettings()
+    // window.location.assign("http://127.0.0.1:5500/game.html")
+    // window.location.assign("https://datonex.github.io/snake-and-the-wizard/")
   } else {
     return;
   }
 });
-
-/**
- * This function will show the settings and hide the main menu
- */
-function toggleSettingsOn() {
-  show(settingsMenu);
-  hide(mainMenu);
-}
-
-/**
- * This function will show the main and hide the settings menu
- */
-function toggleSettingsOff() {
-  hide(settingsMenu);
-  show(mainMenu);
-}
 
 /**
  * This function will get the current input direction from the user. Function is called in @see update

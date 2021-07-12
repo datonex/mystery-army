@@ -18,10 +18,13 @@ import { outsideGrid } from "./grid.js";
 let lastRenderTime = 0;
 let gameOver = false;
 let gamePaused = false;
+let showSettings = false;
 let score = document.getElementById("score").innerText;
 export const gameBoard = document.getElementById("game-board");
-const pauseMenu = document.getElementById("pause-menu");
-const gameOverMenu = document.getElementById("game-over-menu");
+export const pauseMenu = document.getElementById("pause-menu");
+export const gameOverMenu = document.getElementById("game-over-menu");
+export const settingsMenu = document.getElementById("settings-menu");
+export const gamePage = document.getElementById("game-content");
 // const gameContent = document.getElementById("game-content");
 const hiScore = localStorage.getItem("hiscore");
 
@@ -69,6 +72,13 @@ function main(currentTime) {
     return;
   } else {
     hide(pauseMenu);
+  }
+
+  if (showSettings) {
+    show(settingsMenu);
+    blur(gameBoard);
+  } else {
+    hide(settingsMenu);
     unblur(gameBoard);
   }
   update();
@@ -122,6 +132,16 @@ export function checkDeath() {
 export function togglePause() {
   gamePaused = !gamePaused;
   if (gamePaused) main(lastRenderTime);
+}
+
+export function toggleSettings() {
+  showSettings = !showSettings;
+  if (showSettings) {
+    show(settingsMenu);
+    hide(gameOverMenu);
+    blur(pauseMenu);
+    blur(gameBoard);
+  }
 }
 
 /**
@@ -192,7 +212,6 @@ export function unblur(element) {
 
 export function startGame() {
   const startPage = document.getElementById("start-menu");
-  const gamePage = document.getElementById("game-content");
 
   hide(startPage);
   show(gamePage);
