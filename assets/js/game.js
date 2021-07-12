@@ -121,23 +121,6 @@ export function togglePause() {
 }
 
 /**
- * This function will hide any document DOM object from the user
- *
- * @param {HTMElement} element HTML DOM object
- */
-export function hide(element) {
-  element.style.display = "none";
-}
-
-/**
- * This function will show any document DOM object to the user
- * @param {HTMLElement} element HTML DOM object
- */
-export function show(element) {
-  element.style.display = "block";
-}
-
-/**
  * This function will increase the score. It is called in @see growSnake in @module snake
  *
  * @requires module:snake
@@ -176,4 +159,21 @@ export function getHiScore() {
     localStorage.setItem("hiscore", JSON.stringify(scoreEval));
     document.getElementById("hiscore").innerText = parseInt(scoreEval);
   }
+}
+
+/**
+ * This function will hide any document DOM object from the user
+ *
+ * @param {HTMElement} element HTML DOM object
+ */
+export function hide(element) {
+  element.style.display = "none";
+}
+
+/**
+ * This function will show any document DOM object to the user
+ * @param {HTMLElement} element HTML DOM object
+ */
+export function show(element) {
+  element.style.display = "block";
 }

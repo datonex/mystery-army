@@ -5,7 +5,6 @@ let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
 const settingsMenu = document.getElementById("settings-menu");
 const mainMenu = document.getElementById("main-menu");
-// TODO clean up arrows
 // Add keyboard event listeners
 window.addEventListener("keydown", (e) => {
   switch (e.key) {
@@ -34,17 +33,21 @@ window.addEventListener("keydown", (e) => {
       inputDirection = { x: 1, y: 0 };
       break;
     default:
-      console.log(
-        "Incorrect key pressed. Use the Arrow keys or WASD to play the game"
-      );
+      return;
+  }
+});
+
+// Use enter button to restart game when user looses
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && checkDeath()) {
+    location.reload();
+  } else {
+    return;
   }
 });
 
 // Add touch event listeners for touchscreen devices
 window.addEventListener("swiped", function (e) {
-  console.log(e.type);
-  console.log(e.target);
-  console.log(e.detail);
   switch (e.detail.dir) {
     case "up":
       if (lastInputDirection.y !== 0) break;
@@ -65,20 +68,9 @@ window.addEventListener("swiped", function (e) {
   }
 });
 
-// Use enter button to restart game when user looses
-window.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && checkDeath()) {
-    console.log(checkDeath());
-    location.reload();
-  } else {
-    return;
-  }
-});
-
 // Event listers to toggle between menu and settings boxes
 // prettier-ignore
 window.addEventListener("click", (e) => {
-  console.log(e.target.className);
   if (
     e.target.className === "btn-menu settings" ||
     e.target.className === "settings"
