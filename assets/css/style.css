@@ -120,6 +120,18 @@ ul {
 }
 
 /* Game styling settings */
+.h1-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px 0;
+  box-sizing: border-box;
+}
+
+.h1-container i {
+  margin: 0 20px;
+}
+
 #start-menu {
   display: block;
   position: absolute;
