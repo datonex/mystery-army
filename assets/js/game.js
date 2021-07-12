@@ -25,7 +25,7 @@ export const pauseMenu = document.getElementById("pause-menu");
 export const gameOverMenu = document.getElementById("game-over-menu");
 export const settingsMenu = document.getElementById("settings-menu");
 export const gamePage = document.getElementById("game-content");
-// const gameContent = document.getElementById("game-content");
+export const startPage = document.getElementById("start-menu");
 const hiScore = localStorage.getItem("hiscore");
 
 /**
@@ -211,8 +211,6 @@ export function unblur(element) {
 }
 
 export function startGame() {
-  const startPage = document.getElementById("start-menu");
-
   hide(startPage);
   show(gamePage);
 }

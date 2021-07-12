@@ -1,17 +1,5 @@
 import "./libraries/swiped-events/dist/swiped-events.min.js";
-import {
-  checkDeath,
-  togglePause,
-  show,
-  hide,
-  startGame,
-  settingsMenu,
-  gameOverMenu,
-  pauseMenu,
-  gameBoard,
-  toggleSettings,
-  //  toggleSettings,
-} from "./game.js";
+import { checkDeath, togglePause, startGame, toggleSettings } from "./game.js";
 
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
@@ -85,16 +73,18 @@ window.addEventListener("swiped", function (e) {
   }
 });
 
-// Event listers to toggle between menu and settings boxes
-// prettier-ignore
 window.addEventListener("click", (e) => {
-  console.log(e.target.className)
-  if (e.target.className === "settings" || e.target.className === "fas fa-cog") {
-    toggleSettings()
-    // window.location.assign("http://127.0.0.1:5500/game.html")
+  switch (e.target.className) {
+    case "fas fa-cog":
+      toggleSettings();
+      break;
+    case "fas fa-arrow-circle-left":
+      window.location.assign("http://127.0.0.1:5500/");
+      // window.location.assign("https://datonex.github.io/snake-and-the-wizard/")
+      break;
+    case "fas far-redo-alt":
+      window.location.assign("http://127.0.0.1:5500/");
     // window.location.assign("https://datonex.github.io/snake-and-the-wizard/")
-  } else {
-    return;
   }
 });
 
