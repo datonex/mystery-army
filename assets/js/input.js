@@ -82,9 +82,12 @@ window.addEventListener("click", (e) => {
       window.location.assign("http://127.0.0.1:5500/");
       // window.location.assign("https://datonex.github.io/snake-and-the-wizard/")
       break;
-    case "fas far-redo-alt":
-      window.location.assign("http://127.0.0.1:5500/");
-    // window.location.assign("https://datonex.github.io/snake-and-the-wizard/")
+    case "fas fa-redo-alt":
+      window.location.assign("http://127.0.0.1:5500/game.html");
+      // window.location.assign("https://datonex.github.io/snake-and-the-wizard/game.html")
+      break;
+    default:
+      return;
   }
 });
 
