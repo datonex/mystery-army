@@ -98,23 +98,20 @@ ul {
 }
 
 #pause-menu .menu-container,
-#game-over-menu .menu-container {
+#game-over-menu .menu-container,
+#settings-menu .menu-container {
   background: transparent;
 }
 
 #pause-menu,
-#game-over-menu {
+#game-over-menu,
+#settings-menu {
   background: transparent;
   position: absolute;
   margin: 0 auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
-  z-index: 10;
-}
-
-#settings-menu {
   display: none;
   z-index: 10;
 }
