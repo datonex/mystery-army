@@ -1,10 +1,11 @@
 import "./libraries/swiped-events/dist/swiped-events.min.js";
-import { checkDeath, togglePause, show, hide } from "./game.js";
+import { checkDeath, togglePause, show, hide, startGame } from "./game.js";
 
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
 const settingsMenu = document.getElementById("settings-menu");
 const mainMenu = document.getElementById("main-menu");
+
 // Add keyboard event listeners
 window.addEventListener("keydown", (e) => {
   switch (e.key) {
@@ -14,21 +15,25 @@ window.addEventListener("keydown", (e) => {
     // Use arrow keys in game
     case "ArrowUp":
     case "w":
+      startGame();
       if (lastInputDirection.y !== 0) break; // Stop snake from moving down if currently moving up
       inputDirection = { x: 0, y: -1 };
       break;
     case "ArrowDown":
     case "s":
+      startGame();
       if (lastInputDirection.y !== 0) break; // Stop snake from moving up if currently moving down
       inputDirection = { x: 0, y: 1 };
       break;
     case "ArrowLeft":
     case "a":
+      startGame();
       if (lastInputDirection.x !== 0) break; // Stop snake from moving right if currently moving left
       inputDirection = { x: -1, y: 0 };
       break;
     case "ArrowRight":
     case "d":
+      startGame();
       if (lastInputDirection.x !== 0) break; // Stop snake from moving left if currently moving right
       inputDirection = { x: 1, y: 0 };
       break;
@@ -50,18 +55,22 @@ window.addEventListener("keydown", (e) => {
 window.addEventListener("swiped", function (e) {
   switch (e.detail.dir) {
     case "up":
+      startGame();
       if (lastInputDirection.y !== 0) break;
       inputDirection = { x: 0, y: -1 };
       break;
     case "down":
+      startGame();
       if (lastInputDirection.y !== 0) break;
       inputDirection = { x: 0, y: 1 };
       break;
     case "left":
+      startGame();
       if (lastInputDirection.x !== 0) break;
       inputDirection = { x: -1, y: 0 };
       break;
     case "right":
+      startGame();
       if (lastInputDirection.x !== 0) break;
       inputDirection = { x: 1, y: 0 };
       break;

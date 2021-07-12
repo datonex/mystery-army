@@ -177,3 +177,11 @@ export function hide(element) {
 export function show(element) {
   element.style.display = "block";
 }
+
+export function startGame() {
+  const startPage = document.getElementById("start-menu");
+  const gamePage = document.getElementById("game-content");
+
+  hide(startPage);
+  show(gamePage);
+}
