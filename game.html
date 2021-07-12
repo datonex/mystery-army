@@ -17,37 +17,51 @@
     <script src="https://kit.fontawesome.com/20692f6912.js" crossorigin="anonymous"></script>
     <title>Snake & The Wizard</title>
   </head>
-  <body id="game-page" data-swipe-threshold="50">
-    <div class="info-container">
-      <div class="h1-container"><h1>The Snake & The Wizard</h1></div>
-      <div class="score-container">
-        <div class="container">Score:<span id="score">0</span></div>
-        <div class="container">Hi-Score:<span id="hiscore">0</span></div>
-        <div class="container">Level:<span id="level">1</span></div>
-      </div>
-      <img src="assets/img/castle.png" alt="Scary castle" />
-    </div>
-    <div class="game-board-container"><div id="game-board"></div></div>
-    <div id="pause-menu">
+  <body>
+    <div id="start-menu">
       <div class="menu-container">
-        <h2>Game Paused</h2>
-        <ul>
-          <li class="btn-menu">
-            <a href="game.html">Restart?</a>
-          </li>
-          <li class="btn-menu">
-            <a href="index.html">Main Menu</a>
-          </li>
-        </ul>
+        <h2>Instructions</h2>
+        <p>Swipe to start</p>
+        <h2>Or</h2>
+        <p>Use the arrow keys/WASD buttons to start</p>
       </div>
     </div>
-    <div id="game-over-menu">
-      <div class="menu-container">
-        <h2>Game Over!</h2>
-        <ul>
-          <li class="btn-menu"><a href="game.html">Try again?</a></li>
-          <li class="btn-menu"><a href="index.html">Main Menu</a></li>
-        </ul>
+    <div id="game-content">
+      <div id="game-page" data-swipe-threshold="50">
+        <div class="info-container">
+          <div class="h1-container"><h1>The Snake & The Wizard</h1></div>
+          <div class="score-container">
+            <div class="container">Score:<span id="score">0</span></div>
+            <div class="container">Hi-Score:<span id="hiscore">0</span></div>
+            <div class="container">Level:<span id="level">1</span></div>
+          </div>
+          <img src="assets/img/castle.png" alt="Scary castle" />
+        </div>
+        <div class="game-board-container">
+          <div id="game-board"></div>
+        </div>
+        <div id="pause-menu">
+          <div class="menu-container">
+            <h2>Game Paused</h2>
+            <ul>
+              <li class="btn-menu">
+                <a href="game.html">Restart?</a>
+              </li>
+              <li class="btn-menu">
+                <a href="index.html">Main Menu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="game-over-menu">
+          <div class="menu-container">
+            <h2>Game Over!</h2>
+            <ul>
+              <li class="btn-menu"><a href="game.html">Try again?</a></li>
+              <li class="btn-menu"><a href="index.html">Main Menu</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <!-- TODO: add no script tags styling <noscript>This game needs Javascript to run.</noscript> -->
