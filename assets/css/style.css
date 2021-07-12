@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Quicksand&display=swap");
+:root {
+  --height: 100vh;
+  --width: 100vw;
+}
 
 body {
   font-family: "Quicksand", sans-serif;
-  height: 100vh;
-  width: 100vw;
+  height: var(--height);
+  width: var(--width);
   margin: 0;
   background: #d9c1d1;
   color: #2a1c33;
@@ -23,8 +27,8 @@ h2 {
 /* Main menu styling */
 .menu-bg {
   background: #2a1c33 url(../img/bg.jpg) center center / cover no-repeat;
-  height: 100vh;
-  width: 100vw;
+  height: var(--height);
+  width: var(--width);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -40,6 +44,7 @@ h2 {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  z-index: 10;
 }
 
 #back-content {
@@ -89,6 +94,7 @@ ul {
 
 #main-menu {
   display: block;
+  z-index: 10;
 }
 
 #pause-menu .menu-container,
@@ -105,19 +111,35 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  z-index: 10;
 }
 
 #settings-menu {
   display: none;
+  z-index: 10;
 }
 
 /* Game styling settings */
+#start-menu {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#game-content {
+  display: none;
+  background: transparent;
+}
+
 #game-page {
-  background: #d9c1d1;
   display: flex;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  height: var(--height);
+  width: var(--width);
 }
 
 #score,
@@ -181,6 +203,8 @@ ul {
     background: #d9c1d1 url(../img/bg-plain-tablet.png) center center / cover
       no-repeat;
     display: block;
+    height: var(--height);
+    width: var(--width);
   }
 
   .info-container {
