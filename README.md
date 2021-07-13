@@ -227,6 +227,26 @@ The game has mostly remained the same in terms of general structure. New feature
 
 - **Swipe Directions** snake moves in expected swipe direction and are responsive
 
+- ### Game Play
+
+When each game feature was added, it was tested to see if it behaves as expected.
+
+- Snake grows extra segment when it consumes food. which in turn increases score
+
+- Score updates when food is eaten
+
+- High score is successfully stored in local storage
+
+- High score successfully updates when it is smaller than current score
+
+- Snake body follows snake head
+
+- Snake hitting all 4 walls triggers **Game Over** menu
+
+- Snake hitting itself triggers **Game Over** menu
+
+- Snake speed increases when eating
+
 ### CSS3 validator
 
 Pass
@@ -235,51 +255,52 @@ Pass
 
 ### HTML5 Validator
 
-**Home Page** - Pass
-**About Page** - Pass
-**Contact Us** - Pass
-**Travel Information Page** - 2 Errors
+[W3C Validator](https://validator.w3.org/nu/#textarea)
 
-1. Error: The element a must not appear as a descendant of the button element
+**Main Menu Page** - Pass
 
-- From line 345, column 63; to line 345, column 118
+**Game Page** - 4 Warnings 1 Error
 
-`="button"><a href="https://www.evisa.gov.zw/home" target="_blank">Apply`
+1. **Warning** - Empty heading x 4
 
-<!-- markdownlint-disable-next-line MD029 -->
+   - From line 34, column 13; to line 34, column 29
 
-2. Error: The element a must not appear as a descendant of the button element.
+     `<h1 class="menu"><i cla`
 
-- From line 376, column 38; to line 376, column 89
+   - From line 35, column 13; to line 35, column 32
 
-`="button"><a href="https://www.expedia.co.uk" target="_blank">Book f`
+     `<h1 class="restart"><i cla`
+
+   - From line 36, column 13; to line 36, column 33
+
+     `<h1 class="settings"><i cla`
+
+   - From line 37, column 13; to line 37, column 30
+
+     `<h1 class="pause"><i cla`
+
+2. **Error** - A script element with a defer attribute must not have a type attribute with the value module
+
+   `ript>↩ <script src="assets/js/game.js" defer type="module"></scri`
+
+   - Error has been fixed. Modules are defered by default see [here](https://v8.dev/features/modules)
 
 ### Compatibility Testing
 
 - Browser Compatibility
 
-| Screen size\Browser |       Safari       |    Opera    | Microsoft Edge |       Chrome       |      Firefox       | Internet Explorer |
-| ------------------- | :----------------: | :---------: | :------------: | :----------------: | :----------------: | :---------------: |
-| Mobile              | :heavy_check_mark: | Not Tested  |  Not Tested.   | :heavy_check_mark: | :heavy_check_mark: |    Not Tested     |
-| Desktop             | :heavy_check_mark: | Not Tested. |  Not Tested.   | :heavy_check_mark: | :heavy_check_mark: |    Not Tested     |
-| Tablet              | :heavy_check_mark: | Not Tested. |  Not Tested.   | :heavy_check_mark: | :heavy_check_mark: |    Not Tested     |
+| Screen size\Browser |       Safari       |       Opera        | Microsoft Edge |       Chrome       |      Firefox       | Internet Explorer |
+| ------------------- | :----------------: | :----------------: | :------------: | :----------------: | :----------------: | :---------------: |
+| Mobile              | :heavy_check_mark: | :heavy_check_mark: |  Not Tested.   | :heavy_check_mark: | :heavy_check_mark: |    Not Tested     |
+| Desktop             | :heavy_check_mark: | :heavy_check_mark: |  Not Tested.   | :heavy_check_mark: | :heavy_check_mark: |    Not Tested     |
+| Tablet              | :heavy_check_mark: | :heavy_check_mark: |  Not Tested.   | :heavy_check_mark: | :heavy_check_mark: |    Not Tested     |
 
-- OS Compatibility was tested on iOS 14.5.1, MacOS Catalina, iPadOS 14.5 It is yet to be tested on Unix, Linux, Windows or Solaris Operating Systems.
-- The devices used in this testing include MacBook Pro, iPad Pro, iPhone 12 Pro Max, iPhone 7 Plus.
+- OS Compatibility was tested on iOS 14.6, MacOS Catalina, iPadOS 14.6 It is yet to be tested on Unix, Linux, Windows or Solaris Operating Systems.
+- The devices used in this testing include MacBook Pro, iPad Pro 10.5, iPhone 12 Pro Max, iPhone 7 Plus, iPhone 11, iPhone 6s.
 
-- The website was exhaustively tested for responsiveness on [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools). Different viewport sizes were simulated ranging from as small as iPhone 5 (320px) to large desktop sizes (1200px and above).
+- The website was exhaustively tested for responsiveness on [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools). Different viewport sizes were simulated ranging from as small as iPhone 4 (320px) to large desktop sizes (1200px and above).
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
 
 This website was published using [GitHub Pages](https://pages.github.com/).
 
@@ -293,24 +314,15 @@ This website was published using [GitHub Pages](https://pages.github.com/).
 
 ### Contribution
 
-1. Firstly you will need to clone this repository by running the `git clone <https://github.com/datonex/visit-zimbabwe/>` command
-2. If using VS Code type make sure you have th Git extension installed then type about code into your terminal
+1. First you will need to clone this repository by running the `git clone <https://github.com/datonex/visit-zimbabwe/>` command in your terminal
+2. If using VS Code type make sure you have the Git extension installed then type above code into your terminal
 3. Download the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension, one installed find the go live button at the bottom right of your vscode window
-4. The project will now run on [localhost](http://127.0.0.1:5500/)
+4. The project will now run on a [localhost](http://127.0.0.1:5500/)
 5. If using Gitpod use the command `python3 -m http.server`
-6. Make changes to the code and if you think it belongs in here then just submit a pull request
 
 ## Credits
 
-### Content
-
-Each bit of content must have its own link and displayed as a list
-
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
-
 ### Media
-
-Each bit of content must have its own link and displayed as a list
 
 #### Images
 
@@ -322,12 +334,8 @@ Each bit of content must have its own link and displayed as a list
 
 #### Audio
 
-- [Game over](https://mixkit.co/free-sound-effects/) from mixkit
-- epidemic sound
-
-#### Video
-
-- video was obtained from [here](https://linkhere.com)
+- [Game over sound](https://mixkit.co/free-sound-effects/) from mixkit
+- [Epidemic sound](https://www.epidemicsound.com/?_us=adwords_brand&_usx=10143947985_epidemic%20sound&gclid=EAIaIQobChMI_PfY5Zjf8QIVlojVCh1iJgPGEAAYASAAEgJlXfD_BwE)
 
 ### Acknowledgements
 
@@ -338,5 +346,9 @@ Each bit of content must have its own link and displayed as a list
 - Code Institute [Love Maths](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) Project
 - How to access local storage using **JavaScript** from [Michael Karen](https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68)
 - Game user interface [Steven Lambert](https://blog.sklambert.com/html5-game-tutorial-game-ui-canvas-vs-dom/)
+- Window Location [W3Schools](https://www.w3schools.com/js/js_window_location.asp)
+- Backticks [Medium](https://betterprogramming.pub/javascript-how-backticks-work-de269e0fb8ba)
+- Modules [V8 Dev](https://v8.dev/features/modules)
+- Overscroll [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior)
 
 - Thank you to my mentor for his support and guidance
