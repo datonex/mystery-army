@@ -26,7 +26,7 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 - #### As a user who wants to play a quick game on my commute
 
-1. I want to hav access to the game on the go
+1. I want to have access to the game on the go
 
 2. I want to easily start the game
 
@@ -34,9 +34,11 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 4. I want to be able to easily see my score
 
-5. I want responsive touch interaction on mobile device
+5. I want responsive touch interaction on a mobile device
 
-- #### As an adolescent
+6. I want to be able to pause the game
+
+- #### As a user at home
 
 1. I want to have access to the website on any device and on the go
 
@@ -44,13 +46,15 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 3. I want responsive touch interaction on mobile device or tablet
 
-4. I want to be able to use the arrow buttons, or the WASD buttons to control the snake's direction on desktop
+4. I want to be able to use the arrow buttons, or the WASD buttons to control the snake's direction on desktop computer
+
+5. I want to be able to pause the game
 
 ### Design
 
 #### Game Story
 
-Story for the game came from my love of Scooby Doo as a child. They always encountered scary looking houses and all kinds of "monsters" (I intentionally put that in quotes because the monster's were really people in costumes... duh). In this game however the monster is real! You were turned into a snake by a wizard and he locked you up in a very large empty room in his large house. The room as no windows and the door can only be opened by the wizard's magic. However the wizard is unaware of a very important fact that could give you a chance to escape, whenever he is asleep, he spontaneously spawns all kinds of fruit in that empty room that you are trapped in. He also doesn't know that the fruit's have powers that make you grow very quickly. While stuck in there you got hungry and ate the fruit without thinking. When you realised that you grew longer, you had an idea to eat the fruit and grow large enough to make the room collapse on itself and escape.
+Story for the game came from my love of Scooby Doo as a child. They always encountered scary looking houses and all kinds of "monsters". In this game however the monster is real! You were turned into a snake by a wizard and he locked you up in a very large empty room in his large house. The room as no windows and the door can only be opened by the wizard's magic. However the wizard is unaware of a very important fact that could give you a chance to escape, whenever he is asleep, he spontaneously spawns all kinds of fruit in that empty room that you are trapped in. He also doesn't know that the fruit's have powers that make you grow very quickly. While stuck in there you got hungry and ate the fruit without thinking. When you realised that you grew longer, you had an idea to eat the fruit and grow large enough to make the room collapse on itself and escape.
 
 #### Colour Scheme
 
@@ -91,6 +95,22 @@ Wireframes were created using Adobe Xd.
 - Desktop Wireframe
 
 <img src="./assets/img/readme/wireframes/wireframes-second/webpage.png" height="300px" />
+
+#### Mockups
+
+The game has mostly remained the same in terms of general structure. New feature since the wireframe has been added such as:
+
+- Main Menu
+
+<img src="./assets/img/readme/game-main-menu-mockup.png">
+
+- Game instructions
+
+<img src="./assets/img/readme/game-instructions-mockup.png">
+
+- Game states, including Pause, Game Over, Play and Setting Page
+
+<img src="./assets/img/readme/game-states-mockup.png">
 
 ### Existing Features
 
