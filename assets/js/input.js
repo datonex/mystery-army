@@ -86,9 +86,13 @@ window.addEventListener("touchstart", (e) => {
       toggleSettings();
       break;
     case "fas fa-arrow-circle-left":
+    case "btn-menu main-menu":
+    case "main-menu":
       window.location.assign("https://datonex.github.io/snake-and-the-wizard/");
       break;
     case "fas fa-redo-alt":
+    case "btn-menu restart":
+    case "restart":
       window.location.assign(
         "https://datonex.github.io/snake-and-the-wizard/game.html"
       );
@@ -98,12 +102,6 @@ window.addEventListener("touchstart", (e) => {
   }
 });
 
-// https://medium.com/jsdownunder/locking-body-scroll-for-all-devices-22def9615177
-// prettier-ignore
-document.addEventListener("touchend", (e) => {
-  e.preventDefault();
-}, false);
-
 window.addEventListener("click", (e) => {
   switch (e.target.className) {
     case "fas fa-cog":
@@ -112,14 +110,14 @@ window.addEventListener("click", (e) => {
     case "fas fa-arrow-circle-left":
     case "btn-menu main-menu":
     case "main-menu":
-      window.location.assign("http://127.0.0.1:5500/");
-      // window.location.assign("https://datonex.github.io/snake-and-the-wizard/")
+      window.location.assign("https://datonex.github.io/snake-and-the-wizard/");
       break;
     case "fas fa-redo-alt":
     case "btn-menu restart":
     case "restart":
-      window.location.assign("http://127.0.0.1:5500/game.html");
-      // window.location.assign("https://datonex.github.io/snake-and-the-wizard/game.html")
+      window.location.assign(
+        "https://datonex.github.io/snake-and-the-wizard/game.html"
+      );
       break;
     default:
       return;
