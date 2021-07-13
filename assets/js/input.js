@@ -85,6 +85,9 @@ window.addEventListener("touchstart", (e) => {
     case "fas fa-cog":
       toggleSettings();
       break;
+    case "fas fa-pause-circle":
+      togglePause();
+      break;
     case "fas fa-arrow-circle-left":
     case "btn-menu main-menu":
     case "main-menu":

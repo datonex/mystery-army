@@ -7,7 +7,6 @@
 body {
   font-family: "Quicksand", sans-serif;
   height: var(--height);
-  height: calc(var(--vh, 1vh) * 100);
   width: var(--width);
   margin: 0;
   background: #d9c1d1;
@@ -34,7 +33,6 @@ h3 a {
 .menu-bg {
   background: #2a1c33 url(../img/bg.jpg) center center / cover no-repeat;
   height: var(--height);
-  height: calc(var(--vh, 1vh) * 100);
   width: var(--width);
   overflow: hidden;
   display: flex;
@@ -166,7 +164,6 @@ a:hover {
   align-items: center;
   overflow: hidden;
   height: var(--height);
-  height: calc(var(--vh, 1vh) * 100);
   width: var(--width);
 }
 
@@ -232,7 +229,7 @@ a:hover {
       no-repeat;
     display: block;
     height: var(--height);
-    height: calc(var(--vh, 1vh) * 100);
+
     width: var(--width);
   }
 
