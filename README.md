@@ -54,7 +54,7 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 #### Game Story
 
-Story for the game came from my love of Scooby Doo as a child. They always encountered scary looking houses and all kinds of "monsters". In this game however the monster is real! You were turned into a snake by a wizard and he locked you up in a very large empty room in his large house. The room as no windows and the door can only be opened by the wizard's magic. However the wizard is unaware of a very important fact that could give you a chance to escape, whenever he is asleep, he spontaneously spawns all kinds of fruit in that empty room that you are trapped in. He also doesn't know that the fruit's have powers that make you grow very quickly. While stuck in there you got hungry and ate the fruit without thinking. When you realised that you grew longer, you had an idea to eat the fruit and grow large enough to make the room collapse on itself and escape.
+Story of the game came from my love of Scooby Doo as a child. They always encountered scary looking houses and all kinds of "monsters". In this game however the monster is real! You were turned into a snake by a wizard and he locked you up in a very large empty room in his large house. The room as no windows and the door can only be opened by the wizard's magic. However the wizard is unaware of a very important fact that could give you a chance to escape, whenever he is asleep, he spontaneously spawns all kinds of fruit in that empty room that you are trapped in. He also doesn't know that the fruit's have powers that make you grow very quickly. While stuck in there you got hungry and ate the fruit without thinking. When you realised that you grew longer, you had an idea to eat the fruit and grow large enough to make the room collapse on itself and escape.
 
 #### Colour Scheme
 
@@ -114,49 +114,53 @@ The game has mostly remained the same in terms of general structure. New feature
 
 ### Existing Features
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
 #### Common Features Across All Pages
 
-- [x] **Header** - allows user to easily navigate across all pages
-
-- Header is fixed to top of page for easy access (desktop and large tablets)
-- Zimbabwe logo and text are positioned on the left and are links that take you to the homepage
-- Navigation is place on the right on the logo for easy access (under logo for mobile)
-- Navigation links change colour when hovered over. This lets the visitor know that it is clickable.
-- Navigation link is underlined to let user know what page they are on
-- Entire header disappears for mobile devices
-- Colors have been chosen with optimum contrast in mind to be pleasant to the eye.
 - [x] **Links** that are hovered over
-- All links that are surrounding text have been underlined and change color when hovered over. This helps the user to identify external links. (except logo)
-- [x] **Navigation banner**
-- Navigation banner is the same across all pages to give uniformity and familiarity
-- background image on home is scrollable to give a more fun user experience
-- [x] **Accessibility**
-- All images have aria labels in case they don't load and for the visually impaired
-- [x] **Buttons**
-- All buttons have the same styling and they invert colours when hovered (except for scroll to top button)
+
+- All links that are surrounding text have been underlined and change color when hovered over. This helps the user to identify external links. This excludes the action buttons on the main game screen.
+
 - [x] **Responsiveness**
-- All pages work well with many screen sizes
-- [x] **Footer**
-- Footer sticks to the bottom of the page, regardless of the amount of content. This aids the overall user experience.
-- All content have near uniform layout to give a nice and engaging flow of text and images
-- Social links have been grouped together
-- 'Contact us' is form for feedback and any question the user might have
+
+- All pages work well with many screen sizes.
+
+- Buttons are consistent with theme.
+
+- [x] **Fonts**
+
+- All text is large and easy to read.
+
+- [x] **Accessibility**
+
+- Clear contrast between the background and text.
+
+- Colour theme do not conflict for those who are colour blind.
 
 ### Specific to Pages
 
-- [x] **Home Page**
+- [x] **Main Menu**
 
-- Image grid to easily see a handful of places the user can visit. When the mouse hovers you get addition information about the location
+- Main menu format is consistent across all devices
+
+- [x] **Game Page**
+
+- Instructions for the game are easily accessible.
+
+- All devices are able to pause the game.
+
+- Game difficulty increases during the game by increasing speed
+
+- User has access to the high score.
 
 ### Features Left to Implement
 
-- Add a page where you can make a booking for a particular destinations. this includes adding a virtual online basket so that users can see what they have already selected (requires **Javascript** knowledge) For this reason I decided to remove the booking page from the website because it would be too incomplete and not provide a positive user experience.
+- Be able to change the grid size from the settings page
 
-- hide the scroll to top button at the beginning of page
+- Be able to change the fruit displayed on the page from the snake to eat
+
+- Disable minor scrolling from browser on mobiles when swiping
+
+- Add Sound to Game
 
 ## Technologies Used
 
