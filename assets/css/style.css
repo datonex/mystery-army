@@ -189,8 +189,8 @@ ul {
   width: 90vmin;
   height: 90vmin;
   display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-template-columns: repeat(15, 1fr);
 }
 
 .head-up {

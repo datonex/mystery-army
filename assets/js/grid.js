@@ -1,4 +1,4 @@
-const gridSize = 10;
+const gridSize = 15;
 
 /**
  * This function will generate a random grid point based on the size of the grid

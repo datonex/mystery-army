@@ -6,7 +6,7 @@ import { incrementScore, getHiScore } from "./game.js";
 
 // snake global variables
 export let snakeSpeed = 2;
-const snakeBody = [{ x: 5, y: 5 }];
+const snakeBody = [{ x: 8, y: 8 }];
 
 let newSegments = 0;
 
