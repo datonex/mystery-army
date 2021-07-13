@@ -239,8 +239,11 @@ When each game feature was added, it was tested to see if it behaves as expected
 
 - Snake speed increases when eating
 
+### Bugs
 
-### JavaScript Validator 
+- When game over is triggered, snake head is no longer in front, but moves to the last div element
+
+### JavaScript Validator
 
 VSCode extension [jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint)
 
