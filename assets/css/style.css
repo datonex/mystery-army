@@ -12,6 +12,7 @@ body {
   margin: 0;
   background: #d9c1d1;
   color: #2a1c33;
+  overscroll-behavior: none;
 }
 
 h1 {
