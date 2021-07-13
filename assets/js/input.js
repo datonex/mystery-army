@@ -81,6 +81,21 @@ window.addEventListener("swiped", function (e) {
 
 window.addEventListener("touchstart", (e) => {
   toggleGameStart();
+  switch (e.target.className) {
+    case "fas fa-cog":
+      toggleSettings();
+      break;
+    case "fas fa-arrow-circle-left":
+      window.location.assign("https://datonex.github.io/snake-and-the-wizard/");
+      break;
+    case "fas fa-redo-alt":
+      window.location.assign(
+        "https://datonex.github.io/snake-and-the-wizard/game.html"
+      );
+      break;
+    default:
+      return;
+  }
 });
 
 // https://medium.com/jsdownunder/locking-body-scroll-for-all-devices-22def9615177
@@ -95,10 +110,14 @@ window.addEventListener("click", (e) => {
       toggleSettings();
       break;
     case "fas fa-arrow-circle-left":
+    case "btn-menu main-menu":
+    case "main-menu":
       window.location.assign("http://127.0.0.1:5500/");
       // window.location.assign("https://datonex.github.io/snake-and-the-wizard/")
       break;
     case "fas fa-redo-alt":
+    case "btn-menu restart":
+    case "restart":
       window.location.assign("http://127.0.0.1:5500/game.html");
       // window.location.assign("https://datonex.github.io/snake-and-the-wizard/game.html")
       break;
