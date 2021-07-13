@@ -99,6 +99,15 @@ ul {
   border-radius: 10px;
 }
 
+.btn-menu:hover {
+  background: #d9c1d1;
+  color: #2a1c33;
+}
+
+a:hover {
+  color: #2a1c33;
+}
+
 #main-menu {
   display: block;
 }
