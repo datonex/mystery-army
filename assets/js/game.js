@@ -20,6 +20,7 @@ let gameOver = false;
 let gamePaused = false;
 let showSettings = false;
 let gameScreen = false;
+let vh = window.innerHeight * 0.01;
 let score = document.getElementById("score").innerText;
 export const gameBoard = document.getElementById("game-board");
 export const pauseMenu = document.getElementById("pause-menu");
@@ -27,6 +28,8 @@ export const gameOverMenu = document.getElementById("game-over-menu");
 export const settingsMenu = document.getElementById("settings-menu");
 const hiScore = localStorage.getItem("hiscore");
 
+// https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+document.documentElement.style.setProperty("--vh", `${vh}px`);
 /**
  * This function will define all the tasks that we need to do to generate the game board and will run
  * with each animation frame. The number of times the frame is rendered is controlled by snake speed
@@ -159,6 +162,16 @@ export function toggleSettings() {
 }
 
 /**
+ * This function will display the game board to the user
+ */
+export function startGame() {
+  const startPage = document.getElementById("start-menu");
+  const gamePage = document.getElementById("game-content");
+  hide(startPage);
+  show(gamePage);
+}
+
+/**
  * This function will increase the score. It is called in @see growSnake in @module snake
  *
  * @requires module:snake
@@ -230,14 +243,4 @@ export function blur(element) {
  */
 export function unblur(element) {
   element.style.filter = "blur(0)";
-}
-
-/**
- * This function will display the game board to the user
- */
-export function startGame() {
-  const startPage = document.getElementById("start-menu");
-  const gamePage = document.getElementById("game-content");
-  hide(startPage);
-  show(gamePage);
 }

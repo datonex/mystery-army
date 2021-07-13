@@ -83,6 +83,12 @@ window.addEventListener("touchstart", (e) => {
   toggleGameStart();
 });
 
+// https://medium.com/jsdownunder/locking-body-scroll-for-all-devices-22def9615177
+// prettier-ignore
+document.addEventListener("touchend", (e) => {
+  e.preventDefault();
+}, false);
+
 window.addEventListener("click", (e) => {
   switch (e.target.className) {
     case "fas fa-cog":
