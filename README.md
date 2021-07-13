@@ -164,8 +164,6 @@ The game has mostly remained the same in terms of general structure. New feature
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
 ### Languages used
 
 - [**HTML**](https://en.wikipedia.org/wiki/HTML5) for static text and containers for the game, and buttons.
@@ -199,58 +197,35 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-
-- Go to the "Contact Us" page
-- Try to submit the empty form and verify that an error message about the required fields appears
-- Try to submit the form with an invalid email address and verify that a relevant error message appears
-- Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-- ### Navigation bar
-
-- When the logo or 'Zimbabwe' text is clicked, the user is redirected to the home page
-- All links are working and have been tested.
-- navigation bar is aligned vertically and under the logo for screens smaller than 660px
-- The navigation bar stays at the top of the page for screens larger than 660px only
-
-- ### Footer
-
-- Footer always sticks to the bottom of the page and was tested by removing all content from the page.
-- social media link open in a new tab when clicked
-- When user accesses the 'Contact us' page
-
-  - Name is required to continue submission
-  - Email field is required and has to be in the correct format.
-  - Text field has to contain at least two characters.
-  - terms and conditions have to be ticked
-  - When 'Submit' is clicked (given all fields have been filled out) the form will be sent
-
-- ### The Image grid
-
-- Any image that is hovered on (desktop only) the text is uniformly aligned and shows correct information for another device the grid is hidden and a continuous prose is displayed instead.
-
 - ### External links
 
-- All social links in the footer bring the user to the relevant social pages
-- Links to external websites, the booking and visa button bring the user to the right website in a new tab.
+- Link to Github repository on credits page opens in a new tab and leads to this README
 
 - ### Internal Links
 
-- Logo and text all lead to home page
-- Navigation links lead to relevant pages
-- Contact us link leads to the correct page for all web pages
+- **Start Game Button** opens a new page in the browser to the game instructions screen
+
+- **Credits Button** button shows the credits box as expected
+
+- **Back Icons** and **Main Menu Buttons** buttons in credits box and main game all lead to Main Menu as expected
+
+- **Instruction page** Tapping, and spacebar all toggle lead to the main game board
+
+- **Refresh Icon**, **Restart Button**, **Try Again Button** reloads the game page
+
+- **Setting Icon** Pauses the game and opens the settings box and refreshes game
+
+- **Pause Icon** Pauses and continues game as expected
+
+- ### Button Events
+
+- **Arrow Keys** Move snake in expected direction
+
+- **WASD Keys** Move snake in expended direction
+
+- ### Swipe Events
+
+- **Swipe Directions** snake moves in expected swipe direction and are responsive
 
 ### CSS3 validator
 
