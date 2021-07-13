@@ -79,6 +79,7 @@ window.addEventListener("swiped", function (e) {
   }
 });
 
+// https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Using_Touch_Events
 window.addEventListener("touchstart", (e) => {
   toggleGameStart();
   switch (e.target.className) {
