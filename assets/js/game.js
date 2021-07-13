@@ -20,7 +20,6 @@ let gameOver = false;
 let gamePaused = false;
 let showSettings = false;
 let gameScreen = false;
-let vh = window.innerHeight * 0.01;
 let score = document.getElementById("score").innerText;
 export const gameBoard = document.getElementById("game-board");
 export const pauseMenu = document.getElementById("pause-menu");
@@ -28,8 +27,6 @@ export const gameOverMenu = document.getElementById("game-over-menu");
 export const settingsMenu = document.getElementById("settings-menu");
 const hiScore = localStorage.getItem("hiscore");
 
-// https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
-document.documentElement.style.setProperty("--vh", `${vh}px`);
 /**
  * This function will define all the tasks that we need to do to generate the game board and will run
  * with each animation frame. The number of times the frame is rendered is controlled by snake speed
@@ -51,11 +48,6 @@ function main(currentTime) {
   } else {
     hide(gameOverMenu);
   }
-  //   if (confirm("Oh no the wizard caught you! Press ok to restart.")) {
-  //     window.location = "/game.html"; // refresh the browser and start the game
-  //   }
-  //   return;
-  // }
 
   window.requestAnimationFrame(main);
 
@@ -187,7 +179,6 @@ export function incrementScore() {
  *
  * @requires module:snake
  */
-// prettier-ignore
 export function getHiScore() {
   // Default high score
   let scoreEval = 0;  

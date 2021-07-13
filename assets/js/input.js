@@ -79,6 +79,7 @@ window.addEventListener("swiped", function (e) {
   }
 });
 
+// Touch Events for touch screen devices
 // https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Using_Touch_Events
 window.addEventListener("touchstart", (e) => {
   toggleGameStart();
@@ -106,6 +107,7 @@ window.addEventListener("touchstart", (e) => {
   }
 });
 
+// Click event listeners
 window.addEventListener("click", (e) => {
   switch (e.target.className) {
     case "fas fa-cog":

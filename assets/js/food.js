@@ -2,7 +2,7 @@ import { onSnake, growSnake } from "./snake.js";
 import { randomGridPosition } from "./grid.js";
 
 let food = getRandomFoodPosition(); // Spawn food at a random position at start of game
-// prettier-ignore
+
 const growthRate = 1; // how many segments the snake can grow when it eats food
 
 /**
@@ -27,8 +27,6 @@ export function update() {
  * @param {string} gameBoard - Game board ID (already defined @see module:game)
  * @alias drawFood
  */
-
-// prettier-ignore
 export function draw(gameBoard) {
   const foodElement = document.createElement("div");  // Each food item is contained in a div
   foodElement.style.gridRowStart = food.y;            // Draw food in y direction on grid

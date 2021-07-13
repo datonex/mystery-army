@@ -18,7 +18,6 @@ let newSegments = 0;
  * @requires module:input
  * @alias updateSnake
  */
-// prettier-ignore
 export function update() {
   addSegments();                                    // Add snake segments
 
@@ -40,11 +39,9 @@ export function update() {
  * @requires module:game
  * @alias drawSnake
  */
-// prettier-ignore
 export function draw(gameBoard) {
   snakeBody.forEach((segment,index) => {
     const snakeElement = document.createElement("div"); // Each snake segment is contained in new div
-    
     snakeElement.style.gridRowStart = segment.y;        // Draw segment in y direction on grid
     snakeElement.style.gridColumnStart = segment.x;     // Draw segment in x direction on grid
     // If snake head is not defined, draw snake head otherwise draw body
@@ -62,8 +59,6 @@ export function drawSnakeHead(snakeElement) {
   const direction = getInputDirection();
 
   if (direction.y === 1) {
-    //   snakeElement.classList.add("head-up");
-    // } else if (direction.y === 1) {
     snakeElement.classList.add("head-down");
   } else if (direction.x === -1) {
     snakeElement.classList.add("head-left");
