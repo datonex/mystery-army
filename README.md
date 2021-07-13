@@ -14,14 +14,6 @@ This is a web based game inspired by the Nokia 3310 version of Snake. The aim of
 
 ## UX
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
-
 ### User Stories
 
 - #### As a user who wants to play a quick game on my commute
@@ -247,15 +239,36 @@ When each game feature was added, it was tested to see if it behaves as expected
 
 - Snake speed increases when eating
 
-### CSS3 validator
+
+### JavaScript Validator 
+
+VSCode extension [jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint)
 
 Pass
+
+### CSS3 validator
+
+[W3C CSS Validator](http://jigsaw.w3.org/css-validator/validator)
+
+3 **Warnings**
+
+- Imported style sheets are not checked in direct input and file upload modes
+
+- `--height` is an unknown vendor extension
+
+- `--width` is an unknown vendor extension
+
+2 **Errors**
+
+- `body` Property `overscroll-behavior` doesn't exist : `none`
+
+- `ul` Property `padding-inline-start` doesn't exist : `0`
 
 <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border: 0; width: 88px; height: 31px;" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /></a>
 
 ### HTML5 Validator
 
-[W3C Validator](https://validator.w3.org/nu/#textarea)
+[W3C HTML Validator](https://validator.w3.org/nu/#textarea)
 
 **Main Menu Page** - Pass
 
