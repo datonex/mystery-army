@@ -2,6 +2,8 @@
 
 ## Overview
 
+<img src="./assets/img/readme/game-screen-mockup.png">
+
 This is a web based game inspired by the Nokia 3310 version of Snake. The aim of the game is to grow the snake by eating the fruit that randomly spawn onto the board without hitting the boarder or without hitting your own tail. The website uses basic **HTML** and **CCS** to create the static components of the game. All the interactive features, including movement are made using **JavaScript**. The game will be responsive for all devices.
 
 [Live Website](https://datonex.github.io/snake-and-the-wizard/)
